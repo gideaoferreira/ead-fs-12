@@ -1,1 +1,1 @@
-depois primeiro exercicio
+* primeiro exercicio de git
