@@ -1,4 +1,4 @@
-🧑‍💻 Sobre Mim
+# 🧑‍💻 Sobre Mim
 
 Diego Nobrega Mariano
 
@@ -12,7 +12,7 @@ Ao longo da graduação na UFC, já desenvolvi competências sólidas em:
 
 
 
-Sistemas Embarcados
+# Sistemas Embarcados
 
 — Programação de microcontroladores
 
@@ -26,31 +26,31 @@ Sistemas Embarcados
 
 
 
-Projeto e Design de PCBs
+# Projeto e Design de PCBs
 
 Experiência no uso de ferramentas amplamente adotadas na indústria, como:
 
 
 
-KiCad / PCBNew
+* KiCad / PCBNew
 
 
 
-Altium Designer (licença estudantil)
+* Altium Designer (licença estudantil)
 
 
 
-Autodesk Fusion
+* Autodesk Fusion
 
 
 
-EasyEDA
+* EasyEDA
 
 Esses softwares foram utilizados para criação, simulação, roteamento e visualização de placas de circuito impresso em projetos acadêmicos e pessoais.
 
 
 
-Engenharia de Software
+# Engenharia de Software
 
 — Modelagem de requisitos
 
@@ -62,11 +62,10 @@ Engenharia de Software
 
 
 
-No curso Full Stack da Digital College, aprofundo conhecimentos em:
+# No curso Full Stack da Digital College, aprofundo conhecimentos em:
 
 
-
-Desenvolvimento Web (Front-end e Back-end)
+ Desenvolvimento Web (Front-end e Back-end)
 
 
 
@@ -98,7 +97,7 @@ Atualmente, já possuo projetos completos que demonstram minha capacidade práti
 
 
 
-📦 Projeto Destaque — API de E-commerce
+# 📦 Projeto Destaque — API de E-commerce
 
 
 
@@ -110,7 +109,7 @@ API RESTful completa para e-commerce com autenticação JWT, gerenciamento de pr
 
 
 
-🔗 Repositório:
+# 🔗 Repositório:
 
 https://github.com/Diego999991/ecommerce-api
 
