@@ -8,8 +8,4 @@
   <body>
     <h1>Bem-vindo!</h1>
   </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 550198f9e1d4dd64be7119bd215552cd58869bde
