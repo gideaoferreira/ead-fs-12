@@ -9,6 +9,12 @@ git config --global user.name "Seu Nome"
 git config --global user.email "
 ```
 
+Este comando clona um repositório remoto para o seu computador local.
+
+```bash
+git clone url-do-repositorio
+```
+
 Este comando mostra o status atual do repositório.
 
 ```bash
