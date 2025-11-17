@@ -1,0 +1,16 @@
+
+ # Estrutura de Estudos - Diego
+
+Este diretório contém a organização dos conteúdos estudados no curso:
+
+- **git/** → Estudos e comandos Git
+- **html/** → Projetos e exercícios de HTML
+- **css/** → Projetos e exercícios de CSS
+- **javascript/** → Scripts e exercícios JS
+- **frontend/react/** → Conteúdos e projetos com React
+- **banco-de-dados/mysql/** → Scripts e estudos de MySQL
+- **backend/node/** → Projetos e APIs com Node.js
+- **testes/cypress/** → Testes automatizados com Cypress
+- **projeto-final/** → Projeto final do módulo
+
+
