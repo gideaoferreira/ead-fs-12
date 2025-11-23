@@ -1,1 +1,0 @@
-Professor, acabei não conseguindo concluir por conta de problemas em casa com meu filho, ai acabei tendo que deixar de lado e não consegui concluir o exercicio.
