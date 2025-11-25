@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tags de Form</title>
+</head>
+<body>
+    <form>
+        <p> Input com seus atributos: type = `type=text` </p>
+        <input type="text" required /><br />
+        <p> Input com seus atributos: type = `type=date` </p>
+        <input type="date" />
+        <p> Input com seus atributos: type = `type=time` </p>
+        <input type="time" />
+        <p> Input com seus atributos: type = `type=month` </p>
+        <input type="month" />
+        <p> Input com seus atributos: type = `type=file` </p>
+        <input type="file" />
+        <p> Input com seus atributos: type = `type=email` </p>
+        <input type="email" />
+        <p> Input com seus atributos: type = `type=password` </p>
+        <input type="password" />
+        <p> Input com seus atributos: type = `type=number` </p>
+        <input type="password" />
+        <p> Input com seus atributos: type = `type=checkbox` </p>
+        <input type="checkbox" />
+        <p> Input com seus atributos: type = `type=radio` </p>
+        <input name="t" type="radio" />
+        <div>
+            <label for="radio">Label</label>
+            <input name="t" id="radio" type="radio" />
+        </div>
+        <p> Input com seus atributos: name = `name=nome_do_seu_input` </p>
+        <input type="text" name="cpf" />
+        <p> Input com seus atributos: placeholder = `Dica de como o dado deve ser digitado` </p>
+        <input type="text" name="cpf" placeholder="Ex: xxx.xxx.xxx-xx" />
+        <p> Input com seus atributos: disabled = `Desabilita um input` </p>
+        <input type="text" name="cpf" placeholder="Ex: xxx.xxx.xxx-xx" disabled />
+        <p> Select com seus atributos: name = `state` </p>
+        <select name="state" required>
+            <option value="">Selecione um estado</option>
+            <option value="ce">Ceará</option>
+            <option value="sp">São Paulo</option>
+        </select>
+        <p> Input com seus atributos: range = `Cria um slide com extenção de valores` </p>
+        <input type="range" min="0" max="100" />
+        <p> Textare com seus atributos: name - `name=nome_do_seu_input` </p>
+        <textarea rows="10"></textarea>
+    </form>
+</body>
+</html> 
