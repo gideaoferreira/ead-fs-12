@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Alpha Teck</title>
+</head>
+<body>
+    <h2>Agência Alpha Teck</h2>
+    <small>Soluções em Tecnologia, criação e estratégia</small>
+</body>
+</html>
+<body>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Sobre</li>
+            <li>Time</li>
+            <li>Serviço</li>
+            <li>Portifólio</li>
+            <li>Blog</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+    <strong><p>Transformamos Idéias em Produtos Digitais</strong>
+<small>Projetos, desenvolvimento, plataformas, o mundo Web em suas mãos.</small></p>
+
+
+<strong><p>Quem somos</p></strong>
+
+<p><b><h5>Missão</h5></b>
+Entregar soluções digitais que simplifrique a vida das pessoas e gerem valor para negócios de todos os tamanhos.</p>
+<b><h5>Visão</h5></b>
+Ser referência em produtos digitais no mercado.
+
+<b><h5>Nossa Equipe</h5></b>
+Contamos com time qualificado, com experiência no ramo, com melhor interatividade e resultados da região.</p>
+
+
+<p><b>Time</b></p>
+<img></img>
+<img></img>
+<img></img>
+<img></img>
+<p><b>Serviços</b></p>
+<p><b>Designe de Produto</b></p>
+Criação web, acompanhamento de projetos.
+
+<p><b>Desenvolvimento Web</b></p>
+Sites, SPA's, e API's escalaveis entregamos códigos limpos e documentados. 
+
+<p><b>Consultoria de Produto</b></p>
+Apoiamos clientes em estratégia, métricas e Roadmap
+
+<p><small><b>Galeria</small></b></p>
+
+</body>
