@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Exemplo - Transformamos ideias em produtos digitais</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Header e Navegação */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #0066cc;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Seções */
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h1, h2, h3 {
+            color: #222;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: #999;
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: #0066cc;
+            text-decoration: none;
+            margin: 0 0.3rem;
+        }
+
+        /* Listas */
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        /* Links */
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0052a3;
+            text-decoration: underline;
+        }
+
+        /* Cards */
+        .card {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Imagens */
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: #e8e8e8;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        /* Formulário */
+        form {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #0066cc;
+            box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            background-color: #0066cc;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0052a3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f5f5f5;
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #0066cc;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            section {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Agência Exemplo</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção Inicial -->
+        <section id="inicio" class="container">
+            <div class="breadcrumb">
+                <a href="#inicio">Início</a> / 
+                <a href="#sobre">Sobre</a> / 
+                <a href="#servicos">Serviços</a>
+            </div>
+
+            <h1>Transformamos ideias em produtos digitais</h1>
+            <p>Protótipos, aplicações web e aplicações mobile — entrega ágil e com foco no resultado.</p>
+            <p>Soluções inovadoras, criativas em imagens dos projetos de sua forma.</p>
+        </section>
+
+        <!-- Seção Quem Somos -->
+        <section id="sobre" class="container">
+            <h2>Quem somos</h2>
+
+            <div class="card">
+                <h3>Missão</h3>
+                <p><strong>Entregar soluções digitais</strong> que simplifiquem a vida das pessoas e gerem valor para negócios de todos os tamanhos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Visão</h3>
+                <p>Ser referência em produtos digitais no mercado nacional até 2030, com ética, inclusão e sustentabilidade.</p>
+            </div>
+
+            <div class="card">
+                <h3>Nossas equipes</h3>
+                <p>Contamos com designers, desenvolvedores e estrategistas. Abalem um pequeno cartório visual (imagem + texto).</p>
+            </div>
+
+            <h3>Time</h3>
+            <div class="grid">
+                <div class="card">
+                    <div class="image-placeholder">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Foto do Ana Silva">
+                    </div>
+                    <h4>Ana Silva</h4>
+                    <p><strong>UX/UI — designer</strong></p>
+                    <p>Especialista em design de interfaces e experiência do usuário.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image-placeholder">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Foto do Pedro Souza">
+                    </div>
+                    <h4>Pedro Souza</h4>
+                    <p><strong>UX/UI — dev</strong></p>
+                    <p>Desenvolvedor front-end com expertise em tecnologias modernas.</p>
+                </div>
+
+                <div class="card">
+                    <div class="image-placeholder">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="Foto do Lia Couto">
+                    </div>
+                    <h4>Lia Couto</h4>
+                    <p><strong>Product Manager</strong></p>
+                    <p>Gestora de projetos com experiência em metodologias ágeis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="servicos" class="container">
+            <h2>Serviços</h2>
+
+            <div class="card">
+                <h3>Design de Produto</h3>
+                <p>Pesquisa com usuários, wireframes e prototipação.</p>
+                <p>Inicios testes de usabilidade e validação com ajuda recomendada.</p>
+                <div class="image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop" alt="Design de Produto">
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Desenvolvimento Web</h3>
+                <p>Sites, SPAs e APIs escaláveis. Entregamos código limpo e documentado.</p>
+                <div class="image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Desenvolvimento Web">
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Consultoria de Produto</h3>
+                <p>Alinhamos objetivos com estratégia, métricas e roadmap.</p>
+                <div class="image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Consultoria de Produto">
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Galeria</h3>
+                <p>Observação: imagens dos portfólios — subtítulos para imagens nos exercícios.</p>
+                <div class="grid">
+                    <div class="image-placeholder">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="Galeria imagem 1">
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="Galeria imagem 2">
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop" alt="Galeria imagem 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Blog -->
+        <section id="blog" class="container">
+            <h2>Blog</h2>
+
+            <div class="card">
+                <h3><a href="#">Como planejar um MVP</a></h3>
+                <p><small>Publicado em 12 de abril de 2025</small></p>
+                <p>Resumo: Passo a passo prático para validar ideias com o menor esforço possível.</p>
+                <p>Link artigo completo no blog acima.</p>
+            </div>
+
+            <div class="card">
+                <h3><a href="#">Boas práticas de acessibilidade</a></h3>
+                <p><small>Publicado em 8 de março de 2025</small></p>
+                <p>Resumo: Checklist com recomendações para tornar interfaces mais inclusivas.</p>
+            </div>
+        </section>
+
+        <!-- Seção Recursos -->
+        <section id="recursos" class="container">
+            <h2>Recursos</h2>
+            <p>Útil, rápido e download:</p>
+            <ul>
+                <li><a href="#">Guia de estilo (PDF)</a></li>
+                <li><a href="#">Template de design (Figma)</a></li>
+                <li><a href="#">Modelo de backlog</a></li>
+            </ul>
+        </section>
+
+        <!-- Seção Contato Rápido -->
+        <section id="contato-rapido" class="container">
+            <h2>Contato rápido</h2>
+            <p>Email: <a href="mailto:contato@agenciaexemplo.com.br">contato@agenciaexemplo.com.br</a></p>
+            <p>Tel: <a href="tel:+5511988889999">(+55) 11 9 8888-9999</a></p>
+        </section>
+
+        <!-- Seção Formulário de Contato -->
+        <section id="contato" class="container">
+            <h2>Fale conosco</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Seção FAQ -->
+        <section id="faq" class="container">
+            <h2>Perguntas Frequentes</h2>
+
+            <div class="card">
+                <h3>Quais tecnologias vocês usam?</h3>
+                <p>Trabalhamos com stacks modernos: JavaScript, Node, PHP, Python e frameworks de front-end. Escolha a melhor tecnologia para o projeto.</p>
+            </div>
+
+            <div class="card">
+                <h3>Vocês aceitam freelancers rápidos?</h3>
+                <p>Sim, mas dependendo do prazo pode haver taxa de urgência.</p>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section id="portfolio" class="container">
+            <h2>Portfólio</h2>
+            <p>Vemos os projetos com imagens e descrições. Respeite que cada item é um artigo — último para informação semântica.</p>
+
+            <div class="card">
+                <h3>Projeto A — Aplicativo de entregas</h3>
+                <div class="image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" alt="Screenshot do Projeto A">
+                </div>
+                <p>Design de interface e integração com parceiros logísticos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Projeto B — E-commerce</h3>
+                <div class="image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=600&h=400&fit=croph=400https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=600&h=400&fit=cropfit=crop" alt="Screenshot do Projeto B">
+                </div>
+                <p>Loja online com painel administrativo e integração de pagamentos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Projeto C — Plataforma educacional</h3>
+                <div class="image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Screenshot do Projeto C">
+                </div>
+                <p>Ambiente de cursos, avaliações e acompanhamento de alunos.</p>
+            </div>
+        </section>
+
+        <!-- Mapa do Site -->
+        <section id="mapa" class="container">
+            <h2>Mapa do site</h2>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Agência Exemplo. Todos os direitos reservados.</p>
+        <p>Endereço: Rua Exemplo, 123 — Anápolis, CE</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </footer>
+</body>
+</html>
