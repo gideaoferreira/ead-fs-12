@@ -1,0 +1,16 @@
+.destaque-vermelho {
+color: rgb(255, 0, 0);
+font-weight: bold;
+}
+
+.tamanho-fonte {
+font-size: 13px;
+}
+
+.destaque-fundo {
+background-color: #edcdc2; 
+}
+
+* .largura {
+max-width: 650px;    
+}
