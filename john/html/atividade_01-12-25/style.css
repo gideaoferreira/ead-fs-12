@@ -1,0 +1,53 @@
+* {
+    font-family: Helvetica;
+}
+
+header {
+    background-color: #C4170C;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    padding: 5px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.nav h2 {
+    font-size: 40px;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: #1f2123;
+}
+
+p {
+    color: #4f5257;
+    font-size: large;
+}
+
+a {
+    color: #C4170C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+mark {
+    background-color: #f3d1ce;
+}
+
+.imgcaption {
+    font-size: small;
+}
+
+img {
+    width: 647px;
+}
