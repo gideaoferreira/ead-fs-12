@@ -1,0 +1,43 @@
+.destaque-vermelho {
+color: rgb(255, 0, 0);
+font-weight: bold;
+}
+
+.tamanho-fonte {
+font-size: 13px;
+}
+
+.destaque-fundo {
+background-color: #edcdc2; 
+}
+
+* .largura {
+max-width: 650px;    
+}
+
+.table, th, td  {
+border: 1px solid rgb(192, 189, 189);
+border-radius: 10px;
+padding-top: 25px;
+padding-bottom: 25px;
+padding-left: 20px;
+font-size: 22px
+}
+
+.cabecalho{
+background-color: rgb(241, 17, 10);
+padding-top: 20px;
+padding-right: 10px;
+padding-bottom: 25px;
+padding-left: 40px;
+}
+
+.fonte-cabecalho{     
+font-size: 70px;
+color: #ffffff;   
+}
+
+ .centralizar{
+ text-align: center;
+}
+
