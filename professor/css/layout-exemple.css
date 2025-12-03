@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    justify-content: center
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.principal {
+    width: 700px;
+}
+
+.bloco {
+    background-color: red;
+}
+
+.secondary-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: red;
+}
+
+.secondary-menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.estado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-ceara {
+    background-color: red;
+    border-top: 1px solid rgb(241, 73, 73);
+}
+
+.menu-itens {
+    width: 700px;
+    margin: 0 auto;
+}
