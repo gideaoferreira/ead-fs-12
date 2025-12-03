@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box-a {
+    background-color: lime;
+    width: 200px;
+}
+
+.box-b {
+    background-color: orange;
+    width: 200px;
+}
