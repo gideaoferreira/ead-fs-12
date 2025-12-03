@@ -1,0 +1,21 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+    color: #1f2123;
+}
+
+article {
+    width: 400px;
+}
+
+article a {
+    color: #C4170c;
+    font-weight: bold;
+}
+
+article img {
+    width: 100%;
+}
+
+.small-text {
+    font-size: 10px;
+}

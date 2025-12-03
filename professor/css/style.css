@@ -1,0 +1,29 @@
+.header {
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.basic-text {
+    color: rgb(61, 61, 61);
+    text-align: justify;
+
+    font-size: 16px;
+}
+
+.autor {
+    background-color: rgb(182, 182, 182);
+    width: 200px;
+}
+
+.form-comments {
+    background-color: rgb(225, 225, 225);
+    width: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
