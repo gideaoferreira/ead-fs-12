@@ -1,0 +1,153 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.font-family {
+  font-family: 'Nunito Sans';
+}
+
+.font-size {
+  font-size: 26px;
+}
+
+/* or numeric value like:
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 500;
+    font-weight: 600;
+    font-weight: 700;
+    font-weight: 800;
+    font-weight: 900;
+    font-weight: bold;
+    font-weight: normal;
+    font-weight: lighter;
+    font-weight: bolder;
+*/
+
+
+.font-weight-200 {
+    font-weight: 200;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+.font-weight-normal {
+  font-weight: normal;
+}
+
+.font-weight-lighter {
+  font-weight: lighter;
+}
+
+.font-weight-bolder {
+  font-weight: bolder;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.font-style {
+  font-style: italic;
+}
+
+.line-height {
+  line-height: 16px;
+}
+
+/* justify, left, right, center */
+.text-align {
+  text-align: justify;
+}
+
+.letter-spacing {
+  letter-spacing: 3rem;
+}
+
+.word-spacing {
+  word-spacing: 30px;
+}
+
+.text-decoration {
+  text-decoration: underline;
+}
+
+.text-decoration-color {
+  text-decoration-color: red;
+}
+
+.text-decoration-style {
+  text-decoration-style: dotted;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px black;
+}
+
+.text-transform {
+  text-transform: uppercase;
+}
+
+.text-overflow {
+  text-overflow: ellipsis;
+}
+
+.color {
+  color: rgb(41, 154, 24);
+}
+
+.opacity {
+  opacity: 0.8;
+}
+
+.width {
+  width: 300px;
+}
+
+.height {
+  height: 30px;
+  background-color: lightgreen;
+}
+
+.max-width {
+  max-width: 100%;
+}
+
+.max-height {
+  max-height: 100%;
+}
+
+.min-width {
+  min-width: 100%;
+}
+
+.min-height {
+  min-height: 100%;
+}
