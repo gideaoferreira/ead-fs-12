@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Agência Alpha Teck</title>
 </head>
 <body>
@@ -13,13 +14,13 @@
 <body>
     <nav>
         <ul>
-            <li>Inicio</li>
-            <li>Sobre</li>
-            <li>Time</li>
-            <li>Serviço</li>
-            <li>Portifólio</li>
-            <li>Blog</li>
-            <li>Contato</li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Time</a></li>
+            <li><a href="#">Serviço</a></li>
+            <li><a href="#">Portifólio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
         </ul>
     </nav>
     <strong><p>Transformamos Idéias em Produtos Digitais</strong>
@@ -28,30 +29,187 @@
 
 <strong><p>Quem somos</p></strong>
 
-<p><b><h5>Missão</h5></b>
+<p><strong><h5>Missão</h5></strong>
 Entregar soluções digitais que simplifrique a vida das pessoas e gerem valor para negócios de todos os tamanhos.</p>
-<b><h5>Visão</h5></b>
+<strong><h5>Visão</h5></strong>
 Ser referência em produtos digitais no mercado.
 
-<b><h5>Nossa Equipe</h5></b>
+<strong><h5>Nossa Equipe</h5></strong>
 Contamos com time qualificado, com experiência no ramo, com melhor interatividade e resultados da região.</p>
 
 
-<p><b>Time</b></p>
-<img></img>
-<img></img>
-<img></img>
-<img></img>
-<p><b>Serviços</b></p>
-<p><b>Designe de Produto</b></p>
+<p><strong>Time</strong></p>
+<img
+    src="https://m.media-amazon.com/images/I/81wbmWlRNEL._AC_UF1000,1000_QL80_.jpg"
+        style="height: 120px"
+         />
+          <p>
+                <b>Steve Jobs</b><br /><small>Head de Design</small>
+              </p>
+         <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1-MXUc6ZkxBNNdj3-YW8SSJX-WGgjUXsxWg&s"
+        style="height: 120px"
+         />
+          <p>
+                <b>Elon Musk</b><br /><small>Lead Front End</small>
+              </p>
+        <img
+        src="https://lookaside.fbsbx.com/elementpath/media/?media_id=323764547398564&version=1760013275"
+        style="height: 120px"
+        />
+         <p>
+                <b>Mark Zuckerberg</b><br /><small>Product Manager</small>
+              </p>
+
+<p><strong>Serviços</strong></p>
+<p><strong>Designe de Produto</strong></p>
 Criação web, acompanhamento de projetos.
 
-<p><b>Desenvolvimento Web</b></p>
+<p><strong>Desenvolvimento Web</strong></p>
 Sites, SPA's, e API's escalaveis entregamos códigos limpos e documentados. 
 
-<p><b>Consultoria de Produto</b></p>
+<p><strong>Consultoria de Produto</strong></p>
 Apoiamos clientes em estratégia, métricas e Roadmap
+<div>
+<p><small><strong>Galeria</small></strong></p>
+<img src="c:\Users\Lenovo\Downloads\images.jfif"/>
+    <style>="width: 626px;"</style>
+<img src="c:\Users\Lenovo\Downloads\i324545.jpeg"/>
+    <style>="width: 626px;"</style>
+<img src="c:\Users\Lenovo\Downloads\images (1).jfif"/>
+    <style>="width: 626px;"</style>
+</div>
+<p><strong>Blog</strong></p>
+<div>
+<h3><a href="#">Como planejar um MVP</a></h3>
+<p><small>Publicado em 25 de Novembro de 2025</small></p>
+    <p>
+                  Resumo: Passo a passo prático para validar ideias com o menor esforço possível. 
+                  Leia o artigo completo no link acima
+                </p>
+</div>
 
-<p><small><b>Galeria</small></b></p>
+<div>
+<h3><a href="#">Boas Práticas de acessibilidade</a></h3>
+<p><small>Publicado em 02 de Agosto de 2025</small></p>
+ <p>
+                  Resumo: Tornandop as interfaces mais inclusiva. 
+                  Leia o artigo completo no link acima
+                </p>
 
-</body>
+</div>
+<section>
+    <article>
+        <p><strong>Recursos</strong></p>
+<small> link's rapidos e Downloads</small>
+<li><a href="#">Guia de Estilo PDF</a></li>
+<li><a href="#">Checklist de OA</a></li>
+<li><a href="#">Modelo de Bachlog</a></li>
+    </article>
+</section>
+<section>
+    <article>
+        <p><strong>Contato Rápido</strong></p>
+        <p>E-mail: contato@alphateck.com.br</br>
+        Telefone: (85)999990000</p>
+        <h2>Fale conosco</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input 
+                type="text" 
+                name="Nome" 
+                id="name" 
+                placeholder="Seu nome"
+                />
+                </br >
+                </br>
+                <label for="E-mail">E-mail:</label>
+                <input 
+                type="text" 
+                name="E-mail" 
+                id="E-mail" 
+                placeholder="eu@gmail.com"
+                />
+                </br>
+                </br>
+                <label for="message">Mensagem:</label>
+                <br />
+                <textarea 
+                name="message" 
+                id="message" 
+                placeholder="Escreva sua mensagem..." 
+                style="height: 75px;">
+                </textarea>
+                <br />
+                </br>
+<section
+<article
+     <p><strong>Perguntas Frequentes</p></strong></p>
+    <p><strong>Quais as tecnologias vocês usam?</strong>
+<small></br>Trabalhamos com stacks, JavaScript, Node, PHP, Python... </small></p>
+    <p><strong>Vocês aceitamam freelances rápido?</strong>
+<small></br>Sim mas dependendo do prazo pode ter taxa de urgência</small></p>
+</article>
+</section>
+<section>
+
+<h2>Portfólio</h2>
+        <p>
+          Seleção de projetos com imagens e descrições.
+        </p>
+<article> 
+    <h3>Projeto A - Aplicativo de entregas</h3>
+    <img
+    scr="c:\Users\Lenovo\Downloads\mockup-slide-celular-4-1.png"
+    alt="Screenshot do Projeto A - app de entregas" 
+          width="626px"
+          />
+    <p>
+        Designe com a interface da interação com os parceiros lojistas
+        
+        </p>
+<h3>Projeto B - E-commerce</h3>
+    <img
+    scr="c:\Users\Lenovo\Downloads\images (2).jfif"
+    alt="Screenshot do Projeto B - E-commerce" 
+          width="626px"
+          />
+    <p>
+        Loja on-line com painel administrativo e reconhecimento de pagamentos
+        
+        </p>
+    </p>
+<h3>Projeto C - Plataforma de cursos  </h3>
+    <img
+    scr="c:\Users\Lenovo\Downloads\images (2).jfif"
+    alt="Screenshot do Projeto C - Plataforma de Cursos" 
+          width="626px"
+          />
+    <p>
+        Ambiente de cursos, avaliações e acompanhamento do aluno
+        
+        </p>
+
+    </article>
+</section>
+<div>
+    <h3>Mapa do Site</h3>
+     <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Time</a></li>
+            <li><a href="#">Serviço</a></li>
+            <li><a href="#">Portifólio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+       
+    </div>
+<section>
+    
+    <small>@2025 agência Alpha Teck - todos os direitos reservados</small></br>
+    <small>Rua Almirante Jobin, n° 123 Cidade dos Funcionarios - Fortaleza/CE</small>
+   
+    </section>
