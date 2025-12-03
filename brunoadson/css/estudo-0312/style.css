@@ -1,0 +1,41 @@
+.largura {
+width: 700px; 
+}
+
+.botao {
+background-color: #007700;
+border: none;
+color: rgb(253, 247, 247);
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 12px;
+padding: 4px 12px;
+}
+
+.tamanho-fonte {
+font-size: 13px;
+}
+
+.cor-da-fonte {
+color: #333333;
+}
+
+.botao2 {
+background-color: #007700;
+border: none;
+color: rgb(253, 247, 247);
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+padding: 12px 18px;
+}
+
+.cor-da-fonte1 {
+color:#007700;    
+}
+
+img {
+width: 100%;
+}
