@@ -4,11 +4,13 @@ Este repositório contém o código-fonte e os recursos para a turma "ead-fs-12"
 
 ### Padrão de commit
 
-Utilizamos o padrão de commits do Conventional Commits para manter um histórico claro e organizado.
-Aqui estão alguns exemplos de tipos de commits que você pode usar:
+Utilizamos o padrão de nome de branches para manter um histórico claro e organizado.
+Aqui estão as diretrizes para nomear suas branches:
 
 - `nome-do-aluno-data-nome-do-exercicio`
   exemplos:
-  - `joao-2024-06-01-exercicio-01-flexbox`
-  - `joao-2024-06-01-exercicio-01-divs`
-  - `maria-2024-06-02-projeto-final`
+  - `joao-03-12-2025-exercicio-01-flexbox`
+  - `joao-03-12-2025-exercicio-01-divs`
+  - `maria-03-12-2025-projeto-final`
+
+karlos-03-12-2025-exercicio-flex
