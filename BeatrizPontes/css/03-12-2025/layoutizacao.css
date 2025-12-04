@@ -23,17 +23,17 @@ body {
 
 
 .grande {
-    width: 100%;
+    width: 700px;
     height: 80px;
 }
 
 .pequeno {
-    width: 120px;
+    width: 200px;
     height: 40px;
 }
 
 .medio {
-    width: 200px;
+    width: 320px;
     height: 60px;
 }
 
