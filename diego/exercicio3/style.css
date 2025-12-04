@@ -1,0 +1,35 @@
+body {
+    background: white;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    background: black;
+    height: 120px;
+    flex: 1;
+}
+
+.small {
+    background: black;
+    height: 50px;
+    flex: 1;
+}
+
+
+.tall-150 { height: 150px; }
+.tall-160 { height: 160px; }
+.tall-90  { height: 90px; }
