@@ -1,12 +1,9 @@
 body {
     display: flex;
     justify-content: center;
-    padding: 40px;
-    background: #fff;
-    font-family: Arial, sans-serif;
 }
 
-.container {
+.corpo {
     width: 80%;
     max-width: 700px;
 }
@@ -18,14 +15,13 @@ body {
     margin: 20px 0;
 }
 
-/* BLOCO PADRÃO */
 .bloco {
-    background: black;
+    background-color: black;
     height: 60px;
     border-radius: 4px;
 }
 
-/* TAMANHOS DIFERENTES */
+
 .grande {
     width: 100%;
     height: 80px;
@@ -36,15 +32,16 @@ body {
     height: 40px;
 }
 
-/* DISTRIBUIÇÕES */
-.duas-lado {
+.medio {
+    width: 200px;
+    height: 60px;
+}
+
+
+.duas-colunas {
     justify-content: space-between;
 }
 
-.duas-lado-centro {
-    justify-content: center;
-}
-
-.quatro-centro {
-    justify-content: center;
+.lado-direito {
+    justify-content: right;
 }
