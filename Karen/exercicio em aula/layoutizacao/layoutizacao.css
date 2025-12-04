@@ -1,0 +1,80 @@
+body {
+    justify-content: center;
+    margin: 0 auto;
+    width: 700px;
+    gap: 20px;
+    
+}
+
+.linha1 { 
+    display: flex;
+    margin: 20px;
+    
+    
+}
+
+.bloco1, .bloco2{
+    background-color: rgb(198, 55, 11);
+    width: 100px;
+    padding: 100px; 
+    margin-left: 100px;
+    align-self: baseline;
+    
+}
+
+.bloco3{
+    background-color: rgb(198, 55, 11);
+    width: 500px;
+    padding: 40px; 
+    margin-top: 50px;
+    margin-left: 100px;
+    
+}
+
+.linha3 { 
+    display: flex;
+    margin: 20px;
+    
+}
+
+.bloco4, .bloco5{
+    background-color: rgb(58, 198, 11);
+    width: 700px;
+    padding: 60px; 
+    margin-top: 50px;
+    margin-left: 100px;
+    
+}
+
+.bloco6{
+    background-color: rgb(198, 55, 11);
+    width: 500px;
+    padding: 10px; 
+    margin-top: 50px;
+    margin-left: 100px;
+    
+}
+
+.linha5{ 
+    display: flex;
+    margin: 20px;
+    
+}
+
+.bloco7, .bloco8, .bloco9{
+    background-color: rgb(198, 55, 11);
+    width: 100px;
+    padding: 100px; 
+    margin-top: 50px;
+    margin-right: 100px;
+    
+}
+
+.bloco10{
+    background-color: rgb(198, 55, 11);
+    width: 500px;
+    padding: 10px; 
+    margin-top: 50px;
+    margin-left: 100px;
+    
+}

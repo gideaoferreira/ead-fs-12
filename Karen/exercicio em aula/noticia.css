@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 700px;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 700px;
+}
+
+
+.linkG1 a {
+    text-decoration: none;
+    color: red;
+}
+
+.linkG1 a:hover,
+.linkG1 a:focus {
+    text-decoration: underline;
+}
+
+.redacao {
+    text-decoration: none;
+    color: red;
+}
+
+.redacao:hover,
+.redacao:focus {
+    text-decoration: underline;
+}
+
+.fortaleza {
+    text-decoration: none;
+    color: red;
+}
+
+.fortaleza:hover,
+.fortaleza:focus {
+    text-decoration: underline;
+}
+
+.marcador1 {
+    background-color: rgb(255, 5, 5);
+}
+
