@@ -1,0 +1,41 @@
+.bloco-principal{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.primeira-Linha{
+    display: flex;
+    gap: 10px;
+}
+
+.elemento-a{
+    background-color: black;
+    width: 50%;
+}
+
+.linha-Unica{
+    margin-top: 10px;
+    background-color: black;
+}
+
+.terceira-Linha{
+    display: flex;
+    justify-content: space-between;
+}
+
+.elemento-b{
+    background-color: black;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.quinta-Linha{
+    display: flex;
+    justify-content: space-between;
+}
+.ultima-Linha{
+    float: right;
+    background-color: black;
+    width: 30%;
+    margin-top: 10px;
+}
