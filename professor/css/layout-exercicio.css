@@ -1,0 +1,29 @@
+.bloco-principal {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.primeira-linha {
+    display: flex;
+    gap: 20px;
+}
+
+.elemento-a{
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+}
+
+.segunda-linha {
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+}
+.elemento-b {
+    width: 33%; 
+    background-color: rgb(0, 0, 0);
+}
+
+.terceira-linha {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
