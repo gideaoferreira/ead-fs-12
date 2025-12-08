@@ -1,0 +1,63 @@
+.linha1 {
+    display: flex;
+    justify-content: center;
+    width: 640px;
+    margin: 0 auto;
+}
+
+.box1, .box2 {
+    width: 300px;
+    height: 100px;
+    background: black;
+    margin: 0 auto;
+}
+
+.box3 {
+    width: 620px;
+    height: 100px;
+    background: black;
+    margin: 10px auto;
+}
+
+.linha3 {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+}
+
+.box4, .box5 {
+    width: 200px;
+    height: 25px;
+    background: black;
+  
+}
+
+.linha5 {
+    display: flex;
+    justify-content: center;
+    width: 620px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.box7, .box8, .box9 {
+    width: 640px;
+    height: 25px;
+    background: black;
+  
+}
+
+.linha6 {
+    display: flex;
+    justify-content:end;
+    width: 620px;
+    margin: 15px auto;
+}
+
+.box10, .box11 {
+    width: 200px;
+    height: 25px;
+    background: black;
+  
+}
