@@ -16,6 +16,12 @@ header .title{
     margin: 0 auto;
 }
 
+.todo-form{
+    width: 700px;
+    margin: 10px auto 10px auto;
+    fill: chartreuse;
+}
+
 .todo-list{
     width: 700px;
     margin: 0 auto;
