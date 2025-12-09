@@ -7,19 +7,18 @@
   color: #242424; 
 }
 
-
 header .title {
   text-align: center;
   width: 700px;
   margin: 0 auto;
 }
 
-
 .todo-form {
-  width: 700px;
-  margin: 10px auto 10px; 
+display: flex;
+justify-content: center;  
+margin: 10px auto 10px;   
+gap: 10px;  
 }
-
 
 .todo-list {
   width: 700px;
@@ -29,23 +28,18 @@ header .title {
   gap: 10px;
 }
 
-
-
 .todo-list__card {
-  background-color: rgb(241, 3, 3);
+  background-color: rgb(233, 243, 248);
   display: flex;
   gap: 10px;
   padding: 6px 8px 6px 8px; 
   border-radius: 3px;
 }
 
-
-
 .todo-list__card .card-date {
   width: 15%;
   display: flex;
-  align-items: center; 
-  background-color: rgb(236, 7, 7);
+  align-items: center;
 }
 
 .todo-list__card .card-body {
@@ -59,44 +53,32 @@ header .title {
   align-self: center; 
 }
 
-
 .todo-list__card .card-actions button {
   cursor: pointer;
   padding: 2px 4px 2px 4px;
   display: flex;
-  border: none;
-  border-radius: 2px; 
-  transition: background-color 0.2s ease; 
+  width: 30px; 
+  height: 30px
+  
 }
 
-
-.todo-list__card .card-actions .btn-done {
-  background-color: rgb(40, 167, 69); 
+.card-red {
+  background-color: #ff4d4df8;
 }
 
-.todo-list__card .card-actions .btn-done:hover {
-  background-color: rgb(33, 136, 56);
-} 
-
-
-.todo-list__card .card-actions .btn-doing {
-  background-color: rgb(255, 193, 7); 
+.card-blue {
+  background-color: #8cadfc;
 }
 
-.todo-list__card .card-actions .btn-doing:hover {
-  background-color: rgb(224, 168, 0); 
+.card-green {
+  background-color: #7ff57f;
 }
 
-
-.todo-list__card .card-actions .btn-refused {
-  background-color: rgb(220, 53, 69); 
-}
-
-.todo-list__card .card-actions .btn-refused:hover {
-  background-color: rgb(186, 30, 46); 
-}
-
-
-.todo-list__card .card-actions button svg {
-  fill: rgb(255, 255, 255); 
+.card-actions button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
 }
