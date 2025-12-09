@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e8ecf7;
+    margin: 0;
+    padding: 30px;
+}
+
+.title {
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c2f45;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.date {
+    width: 130px;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    color: #2c2f45;
+}
+
+.today {
+    background: #dce2f3;
+}
+
+.pink {
+    background: #f6e4ea;
+}
+
+.green {
+    background: #e6f4db;
+}
+
+.day {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.hour {
+    font-size: 26px;
+    margin-top: 6px;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #2c2f45;
+}
+
+.info p {
+    margin-top: 8px;
+    color: #555;
+}
+
+.add {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2c2f45;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add span {
+    font-size: 20px;
+}
+
+.add.black {
+    background: #000;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
