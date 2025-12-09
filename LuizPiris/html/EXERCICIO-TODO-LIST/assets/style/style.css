@@ -1,0 +1,180 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #daeaec;
+}
+
+header {
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+}
+
+.schedule {
+    width: 1000px;
+    margin: 20px auto 0 auto;
+}
+
+.schedule .schedule__card {
+    background-color: white;
+    display: flex;
+    border: 10px solid #ffffff;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 6px 12px 6px 12px;
+}
+
+.schedule .schedule__card .card-date-time {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #daeaec;
+    border: 30px solid #daeaec;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-date-time .time {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.schedule .schedule__card .card-event {
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 60px;
+    gap: 18px;
+}
+
+.schedule .schedule__card .card-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.schedule .schedule__card .card-action button {
+    background-color: white;
+    width: 110px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding-bottom: 50px;
+}
+
+
+
+
+.schedule .schedule__card .card-date-time-2 {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #e7d1e6;
+    border: 30px solid #e7d1e6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-date-time-2 .time {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.schedule .schedule__card .card-event-2 {
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 60px;
+    gap: 18px;
+}
+
+.schedule .schedule__card .card-action-2 {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.schedule .schedule__card .card-action-2 button {
+    background-color: black;
+    width: 130px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 7px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+
+
+.schedule .schedule__card .card-date-time-3 {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #fff8d8;
+    border: 30px solid #fff8d8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-date-time-3 .time {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.schedule .schedule__card .card-action-2 .btn-add {
+    fill: white;
+}
+
+
+.schedule .schedule__card .card-date-time-4 {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #d9f3d7;
+    border: 30px solid #d9f3d7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-date-time-4 .time {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
