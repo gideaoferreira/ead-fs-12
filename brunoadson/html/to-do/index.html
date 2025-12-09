@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assents/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <title>To Do</title>
+</head>
+<body>
+    <<header>
+        <h2 class="title">Minhas Atividades</h2>
+    </header>
+
+    <main>
+        <div class="todo-form">
+            <form>
+                <input type="text" placeholder="Título"> 
+                
+                <input type="text" placeholder="Descrição">
+
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/>
+                    </svg>
+                    Adicionar
+                </button>
+            </form>
+        </div>
+
+        <div class="todo-list">
+            
+            <div class="todo-list__card">
+                
+                <div class="card-date">
+                    <p>12/12/2025</p>
+                </div>
+
+                <div class="card-body">
+                    <h3>Criar aula sobre seletores Javascript</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, facere.</p>
+                </div>
+
+                <div class="card-actions">
+                    <button class="btn-done">
+                       <img src="./assents/images/check.png" alt="">
+                    </button>
+
+                    <button class="btn-doing">
+                         <img src="./assents/images/play.png" alt="">
+                    </button>
+
+                    <button class="btn-refused">
+                        <img src="./assents/images/x-button.png" alt="">
+                    </button>
+                </div>
+            </div>
+            
+            </div>
+    </main>
+    
+</body>
+</html>
