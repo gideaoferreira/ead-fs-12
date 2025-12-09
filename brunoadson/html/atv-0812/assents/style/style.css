@@ -3,17 +3,15 @@
     margin: 0;
 }
 
+.body-color {
+background-color: rgb(180, 215, 248);
+}
 
 header {
   text-align: left;
   width: 700px;
   margin: 0 auto;
-}
-
-
-.todo-form {
-  width: 700px;
-  margin: 10px auto 10px; 
+  padding: 100px 0px 12px 8px;
 }
 
 
@@ -26,24 +24,33 @@ header {
 }
 
 
-
 .todo-list__card {
   background-color: rgb(247, 243, 243);
   display: flex;
   gap: 10px;
   padding: 6px 8px 6px 8px; 
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 
-
 .todo-list__card .card-date {
-  width: 15%;
+  width: 11%;
   display: flex;
   align-items: center; 
   flex-direction: column;
-  padding: 10px 8px 10px 8px;
+  border-radius: 5px;
+  padding: 20px 8px 10px 8px;
   background-color: rgb(227, 228, 236);
+}
+
+.todo-list__card .card-date-red {
+  width: 11%;
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px 8px 10px 8px;
+  background-color: rgb(243, 166, 163);
 }
 
 .todo-list__card .card-body {
@@ -53,18 +60,31 @@ header {
 .todo-list__card .card-actions {
   width: 15%;
   display: flex;
-  align-self: center; 
+  align-self: center;
 }
-
 
 .todo-list__card .card-actions button {
-  cursor: pointer;
-  padding: 2px 4px 2px 4px;
-  display: flex;
-  border: none;
-  width: 16px; 
-  height: 16px
-
+    display: flex;
+    gap: 5px;
+    background: none;
+    border: none;
+    font-size: 10px;
+    color: #5f6368;
+    cursor: pointer;
+    padding: 8px 12px;
+    
 }
 
+.icon {
+    font-size: 19px;
+    font-weight: 300;
+    color: #5f6368;
+}
 
+.time {
+font-size: 25px
+}
+
+.date {
+font-size: 12px
+}
