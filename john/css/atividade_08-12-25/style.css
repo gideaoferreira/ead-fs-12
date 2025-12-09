@@ -1,0 +1,38 @@
+html {
+    font-family: Roboto;
+    background-color: #ECEFF8;
+}
+
+.title {
+    width: 1047px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.todo-list {    
+    background-color: white;
+    width: 1047px;
+    margin: 0 auto;
+}
+
+.todo-list-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.todo-list-card .todo-list-card-date {
+    background-color: #ECEFF8;
+    align-items: center;
+    padding: 20px;
+    width: 50px;
+}
+
+.todo-list-card-content {
+    
+}
+
+.todo-list-card-btn button {
+    border: none;
+    background-color: white
+}
