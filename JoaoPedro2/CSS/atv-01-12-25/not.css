@@ -1,0 +1,61 @@
+*{
+    font-family: verdana;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+mark{
+    font-size: 18px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.link{
+    color: #c4170c;
+}
+
+.pricipal{
+    width: 986px;
+}
+
+.header-secundary{
+    display: flex;
+    width: 986;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    background-color:#c4170c;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sub-menu{
+    background-color:#a8180e;
+}
+
+.itens{
+    width: 986;
+    margin: 0 auto;
+}
