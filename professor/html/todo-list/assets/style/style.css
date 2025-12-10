@@ -1,0 +1,73 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #242424;
+}
+
+header .title {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.todo-form {
+    width: 700px;
+    margin: 10px auto 10px auto;
+}
+
+.todo-list {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo-list .todo-list__card {
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    gap: 10px;
+    padding: 6px 8px 6px 8px;
+    border-radius: 3px;
+}
+
+.todo-list .todo-list__card .card-date {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.todo-list .todo-list__card .card-body {
+    width: 70%;
+}
+
+.todo-list .todo-list__card .card-actions {
+    display: flex;
+    gap: 6px;
+    width: 15%;
+    align-self: center;
+}
+
+.todo-list .todo-list__card .card-actions button {
+    cursor: pointer;
+    padding: 2px 4px 2px 4px;
+    display: flex;
+    border: none;
+}
+
+.todo-list .todo-list__card .card-actions .btn-done {
+    border-radius: 2px;
+}
+
+.todo-list .todo-list__card .card-actions .btn-doing {
+    border-radius: 2px;
+}
+
+.todo-list .todo-list__card .card-actions .btn-refused {
+    border-radius: 2px;
+}
+
+.todo-list .todo-list__card .card-actions button svg {
+    fill: rgb(135, 135, 135);
+}
