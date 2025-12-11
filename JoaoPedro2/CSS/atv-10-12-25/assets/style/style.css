@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color:rgb(15, 14, 14);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border-color:rgb(205, 195, 195);
+    padding: 6px 12px;
+    border-radius: 12px;
+}
