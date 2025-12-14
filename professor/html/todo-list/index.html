@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <h2 class="title">Minhas atividade</h2>
+    </header>
+    <main>
+        <div class="todo-form">
+            <form>
+                <input type="text" placeholder="Título">
+                <input type="text" placeholder="Descrição">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                        viewBox="0 0 24 24"><!-- Icon from Pixel Icon by HackerNoon - https://creativecommons.org/licenses/by/4.0/ -->
+                        <path fill="currentColor" d="M23 11v2h-1v1h-8v8h-1v1h-2v-1h-1v-8H2v-1H1v-2h1v-1h8V2h1V1h2v1h1v8h8v1z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <div class="todo-list">
+            <div class="todo-list__card">
+                <div class="card-date">
+                    12/12/2025
+                </div>
+                <div class="card-body">
+                    <h3>Criar aula sobre seletores Javascript</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, facere.</p>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-done">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                            <path
+                                d="M22 9V7h-1V5h-1V4h-1V3h-2V2h-2V1H9v1H7v1H5v1H4v1H3v2H2v2H1v6h1v2h1v2h1v1h1v1h2v1h2v1h6v-1h2v-1h2v-1h1v-1h1v-2h1v-2h1V9zm-4 3h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1H9v-1H8v-1H7v-1H6v-2h1v-1h2v1h1v1h2v-1h1v-1h1v-1h1V9h1V8h2v1h1v2h-1z" />
+                        </svg>
+                    </button>
+                    <button class="btn-doing">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                            <path
+                                d="M22 11v2h-1v1h-1v1h-2v1h-2v1h-1v1h-2v1h-2v1h-1v1H8v1H6v1H3v-1H2V2h1V1h3v1h2v1h2v1h1v1h2v1h2v1h1v1h2v1h2v1h1v1z" />
+                        </svg>
+                    </button>
+                    <button class="btn-refused">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                            <path d="M22 3v2H2V3h6V2h1V1h6v1h1v1zM4 7v15h1v1h14v-2h1V7zm12 12h-2V9h2zm-6 0H8V9h2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="todo-list__card">
+                <div class="card-date">
+                    12/12/2025
+                </div>
+                <div class="card-body">
+                    <h3>Criar aula sobre seletores Javascript</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, facere.</p>
+                </div>
+                <div class="card-actions">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                            <path
+                                d="M22 9V7h-1V5h-1V4h-1V3h-2V2h-2V1H9v1H7v1H5v1H4v1H3v2H2v2H1v6h1v2h1v2h1v1h1v1h2v1h2v1h6v-1h2v-1h2v-1h1v-1h1v-2h1v-2h1V9zm-4 3h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1H9v-1H8v-1H7v-1H6v-2h1v-1h2v1h1v1h2v-1h1v-1h1v-1h1V9h1V8h2v1h1v2h-1z" />
+                        </svg> </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                            <path
+                                d="M22 11v2h-1v1h-1v1h-2v1h-2v1h-1v1h-2v1h-2v1h-1v1H8v1H6v1H3v-1H2V2h1V1h3v1h2v1h2v1h1v1h2v1h2v1h1v1h2v1h2v1h1v1z" />
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24">
+                            <path d="M22 3v2H2V3h6V2h1V1h6v1h1v1zM4 7v15h1v1h14v-2h1V7zm12 12h-2V9h2zm-6 0H8V9h2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="todo-list__card">
+                <div class="card-date">
+                    <p>12/12/2025</p>
+                </div>
+                <div class="card-body">
+                    <h3>Criar aula sobre seletores Javascript</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, facere.</p>
+                </div>
+                <div class="card-actions">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M22 9V7h-1V5h-1V4h-1V3h-2V2h-2V1H9v1H7v1H5v1H4v1H3v2H2v2H1v6h1v2h1v2h1v1h1v1h2v1h2v1h6v-1h2v-1h2v-1h1v-1h1v-2h1v-2h1V9zm-4 3h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1H9v-1H8v-1H7v-1H6v-2h1v-1h2v1h1v1h2v-1h1v-1h1v-1h1V9h1V8h2v1h1v2h-1z" />
+                        </svg>              </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M22 11v2h-1v1h-1v1h-2v1h-2v1h-1v1h-2v1h-2v1h-1v1H8v1H6v1H3v-1H2V2h1V1h3v1h2v1h2v1h1v1h2v1h2v1h1v1h2v1h2v1h1v1z" />
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                            viewBox="0 0 24 24">
+                            <path d="M22 3v2H2V3h6V2h1V1h6v1h1v1zM4 7v15h1v1h14v-2h1V7zm12 12h-2V9h2zm-6 0H8V9h2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

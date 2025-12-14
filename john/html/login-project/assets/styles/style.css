@@ -1,0 +1,125 @@
+/* Reset CSS */
+* {
+    font-family: Roboto;
+    color: #2d2e2e;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.login .login-form {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login .login-form .login-content {
+    width: 35%;
+    margin: auto;
+}
+
+.login .login-form .login-content .icon {
+    display: flex;
+    justify-content: center;
+}
+
+.login .login-form .login-content .description {
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.login .login-form .login-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.login .login-form .login-content form .input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.login .login-form .login-content form .actions {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 13px 0 0 0;
+}
+
+.login .login-form .login-content form .actions .keep_logged label {
+    font-size: 12px;
+}
+
+.login .login-form .login-content form .actions .keep_logged a {
+    font-size: 12px;
+}
+
+.login .login-form .login-content form button {
+    background-color: rgb(40, 123, 218);
+    color: white;
+    padding: 6px 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.login .login-form .login-content .divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px 0 13px 0;
+}
+
+.login .login-form .login-content .divider .divisor {
+    min-width: 45%;
+    border-bottom: 1px dotted rgb(136, 133, 133);
+}
+
+.login .login-form .login-content .social-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .login-form .login-content .social-login button {
+    padding: 6px 3px;
+    background-color: white;
+    border: #5c5e5e 1px solid;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.login .login-form .login-content .social-login button img {
+    width: 16px;
+}
+
+.login .login-form .login-content .create-account {
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 0 0 0;
+}
+
+.login .login-form .login-content .create-account a,
+.login .login-form .login-content .create-account p {
+    font-size: 12px;
+}
+
+.login .login-banner {
+    background-color: blue;
+    width: 50%;
+    height: 100%;
+}
+
+.login .login-form p {
+    text-align: center;
+}
