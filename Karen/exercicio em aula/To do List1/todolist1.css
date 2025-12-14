@@ -6,7 +6,7 @@
 }
 
 
-header .title{
+header .title {
     text-align: center;
     width: 700px;
     margin: 0 auto;
@@ -17,11 +17,11 @@ header .title{
     margin: 0 auto;
     flex-direction: column;
     padding: 10px;
-    
+
 }
 
 .todo-list .todo-list__card {
-    background-color:rgb(237, 237, 237);
+    background-color: rgb(237, 237, 237);
     display: flex;
     margin: 0 auto;
     gap: 10;
@@ -31,33 +31,55 @@ header .title{
 }
 
 .todo-list .todo-list__card .card-date {
-    display: flex;
     width: 15%;
-    padding: 10px;
-    justify-content: center;
+    display: flex;
+    align-items: center;
 
-    
+
 }
 
 .todo-list .todo-list__card .card-body {
     width: 70%;
-    
-    
+
+
 }
 
 
 .todo-list .todo-list__card .card-actions {
     display: flex;
     width: 15%;
+    align-self: center;
     padding: 10px;
-   
+
 }
 
 .todo-list .todo-list__card .card-actions button {
-   cursor: pointer;
-   display: flex;
-   fill: white;
+    cursor: pointer;
+    display: flex;
+    padding: 2px 4px 2px 4px;
+    border: none;
 }
 
+.todo-list .todo-list__card .card-actions button {
+    cursor: pointer;
+    display: flex;
+    fill: grey;
+    padding: 2px 4px 2px 4px;
+    border: none;
+}
 
+.todo-list .todo-list__card .card-actions button svg {
+    fill: grey;
+}
 
+header .input {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+header .input svg {
+    cursor: pointer;
+}
