@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Minhas atividades</title>
+
+    <style>
+        /* botão play */
+.botoes button:nth-child(1) {
+    color: green;
+}
+
+/* botão check */
+.botoes button:nth-child(2) {
+    color: purple;
+}
+
+/* botão excluir */
+.botoes button:nth-child(3) {
+    color: goldenrod;
+}
+        body {
+    font-family: Arial;
+    background-color: #fdeef4;
+}
+        h1 {
+    text-align: center;
+    color: #d63384;
+}
+        #inputs { text-align: center; margin-top: 20px; }
+        #inputs input { height: 30px; }
+        #inputs button { height: 34px; }
+        .atividade {
+    background-color: #f8d7e6;
+    padding: 10px;
+    width: 900px;
+    margin: 15px auto;
+}
+ width: 900px; margin: 15px auto; }
+        .data { display: inline-block; width: 110px; }
+        .conteudo { display: inline-block; width: 500px; }
+        .botoes { display: inline-block; }
+        .botoes button { background: none; border: none; font-size: 16px; }
+    </style>
+
+</head>
+<body>
+
+<h1>Minhas atividades</h1>
+
+<div id="inputs">
+    <input type="text" value="Tarefa">
+    <input type="text" value="Descrição">
+    <button>+</button>
+</div>
+
+<div class="atividade">
+    <span class="data">08/12/2025</span>
+
+    <div class="conteudo">
+        <b>Criar aula sobre seletores Javascript</b><br>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+    </div>
+
+    <div class="botoes">
+        <button>▶</button>
+        <button>✔</button>
+        <button>X</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -13,4 +13,4 @@ Aqui estão as diretrizes para nomear suas branches:
   - `joao-03-12-2025-exercicio-01-divs`
   - `maria-03-12-2025-projeto-final`
 
-karlos-03-12-2025-exercicio-flex
+

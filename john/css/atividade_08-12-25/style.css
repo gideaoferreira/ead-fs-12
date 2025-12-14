@@ -1,0 +1,122 @@
+html {
+    font-family: Merriweather;
+    background-color: #ECEFF8;
+}
+
+body {
+    margin: 150px auto;
+}
+
+.title {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.todo-list {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.todo-list-card {
+    display: flex;
+    background-color: white;
+    padding: 0 15px;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.todo-list-card-date {
+    background-color: #ECEFF8;
+    padding: 0 15px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+#first .todo-list-card-date p {
+    font-size: 14px;
+}
+
+.todo-list-card-date p {
+    margin-bottom: 7px;
+    font-size: 12px;
+    padding-top: 4px;
+    font-family: Mulish;
+    font-weight: bold;
+}
+
+.todo-list-card-date h2 {
+    margin-top: 7px;
+    font-size: 27px;
+}
+
+.todo-list-card-content h2 {
+    width: 580px;
+    margin: 26px 0 4px;
+    padding-bottom: 5px;
+}
+
+.todo-list-card-content p {
+    margin: 4px 0 26px;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    width: 500px;
+}
+
+.todo-list-card-btn {
+    padding-bottom: 50px;
+    width: 175px;
+}
+
+.todo-list-card-btn button {
+    border: none;
+    background-color: white;
+    display: flex;
+    font-size: 13px;
+    gap: 2px;
+    cursor: pointer;
+    padding: 16px;
+}
+
+#second {
+    display: flex;
+    background-color: white;
+    padding: 0 15px;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#second .todo-list-card-date {
+    background-color: #F8ECF8;
+}
+
+#second .todo-list-card-btn button {
+    background-color: black;
+    border-radius: 12px;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#third {
+    display: flex;
+    background-color: white;
+    padding: 0 15px;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#third .todo-list-card-date {
+    background-color: #F8ECEC;
+}
+
+#forth .todo-list-card-date {
+    background-color: #EEF8EC;
+} 
