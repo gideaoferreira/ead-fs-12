@@ -1,0 +1,19 @@
+.card {
+    border-radius: 10;
+  width: 600px;
+  padding: 500px;
+  background-color: #cfcccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card .grupo2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+}
+.card .divisor
+{
+    background-color: black;
+    width: 600px;
+}
