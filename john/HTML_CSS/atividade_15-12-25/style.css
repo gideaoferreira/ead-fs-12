@@ -2,31 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Google Sans";
     color: white;
 }
 
 html {
-    background-color: #444746;
-}
-
-header {
-    margin: 10px 0;
-}
-
-header .h-title {
-    width: 900px;
-    margin: 0 auto;
-}
-
-main {
-    margin-top: 20px;
-}
-
-main .main-content {
-    width: 900px;
-    margin: 0 auto;
-    display: flex;
-    gap: 10px;
+    background-color: #303030;
 }
 
 img {
@@ -46,20 +27,50 @@ a:hover {
     text-decoration: underline;
 }
 
+header {
+    margin: 10px 0;
+}
+
+header .h-title {
+    width: 900px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+header .h-title small {
+    color: #c9c9c9;
+}
+
+main {
+    margin-top: 20px;
+}
+
+main .main-content {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
 main .card {
     background-color: #1f1f1f;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 33%;
 }
 
 main .card .title {
     display: flex;
+    align-items: center;
+}
+
+main .card .title h2 {
+    font-size: 14px;
 }
 
 .split {
     border: 1px solid #9e9e9e63;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .news {
@@ -71,24 +82,44 @@ main .card .title {
 .link {
     border: none;
     display: flex;
-    justify-content: space-between;
-
+    gap: 15px;
 }
 
 .link .link-title {
     display: flex;
     flex-direction: column;
     font-size: 14px;
-    width: 60%;
+}
+
+.link .link-title span {
+    color: #e6e6e6;
+    font-size: 12px;
+    margin-top: 2px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .link .link-title small {
+    font-size: 10px;
     color: #c9c9c9;
+}
+
+.link .link-title .icon-source {
+    display: flex;
+    gap: 2px;
+}
+
+.link .link-title .icon-source img {
+    height: 15px;
+    width: 15px;
 }
 
 .link img {
     width: 50px;
     height: 50px;
+    flex-shrink: 0;
 }
 
 .news-footer {
@@ -99,5 +130,16 @@ main .card .title {
 
 .news-footer span {
     color: #c9c9c9;
-    font-size: 12px;
+    font-size: 8px;
+}
+
+.news-footer .svg-icon {
+    background-color: #303030;
+    padding: 5px;
+    border-radius: 40px;
+    display: flex;
+}
+
+.news-footer svg {
+    fill: #7fcfff;
 }
