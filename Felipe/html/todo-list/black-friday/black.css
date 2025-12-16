@@ -1,0 +1,23 @@
+* {
+    font-family: "Noto Sans", sans-serif;
+ 
+}
+
+.p {
+    font: ;
+    background-color: rgb(45, 45, 150);
+
+}
+.black30 {
+    cursor: pointer;
+    border: none;
+    margin: 0 auto;
+    padding: 2px 2px;
+    background-color: rgb(60, 60, 236)
+}
+
+.link-site {
+    cursor: pointer;
+    border: none;
+    background-color: 0;
+}
