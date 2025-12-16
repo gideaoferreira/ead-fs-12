@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(54, 52, 52);
+}
+
+section{
+    display: flex;
+    gap: 10px;
+}
+
+.pai .etretenimento{
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    width: 360px;
+    height: 390px;
+    padding: 10px;
+}
+
+p{
+    width: 50%;
+}
+
+a{
+    color: rgb(183, 193, 201);
+}
+
+span{
+    color: rgb(183, 193, 201);
+}
+.etretenimento .image{
+    display: flex;;
+}
+
+.pai2 .Futebol{
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    width: 360px;
+    height: 390px;
+    padding: 10px;
+}
+
+.pai3 .Apostas{
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    width: 360px;
+    height: 390px;
+    padding: 10px;
+}
+
