@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html {
+    background-color: #444746;
+}
+
+header {
+    margin: 10px 0;
+}
+
+header .h-title {
+    width: 900px;
+    margin: 0 auto;
+}
+
+main {
+    margin-top: 20px;
+}
+
+main .main-content {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+img {
+    height: 80px;
+    border-radius: 10px;
+}
+
+svg {
+    fill: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main .card {
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-radius: 5px;
+    width: 33%;
+}
+
+main .card .title {
+    display: flex;
+}
+
+.split {
+    border: 1px solid #9e9e9e63;
+    margin: 5px 0;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.link .link-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 60%;
+}
+
+.link .link-title small {
+    color: #c9c9c9;
+}
+
+.link img {
+    width: 50px;
+    height: 50px;
+}
+
+.news-footer {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-footer span {
+    color: #c9c9c9;
+    font-size: 12px;
+}
