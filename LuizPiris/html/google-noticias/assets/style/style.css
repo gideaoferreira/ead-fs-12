@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #2c2d31;
+    color: #333;
+}
+
+header {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    color: white;
+}
+
+.title h3 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+header .personalizar button { 
+    background-color: transparent;
+    font-size: 9px;
+    color: #a8c7fa;
+    border: 1px solid white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;   
+}
+
+main {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+}
+
+main .card-Brasil,
+main .card-Negócios,
+main .card-Política {
+    display: flex;
+    width: 33%;
+    height: auto;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 10px 16px;
+    color: white;
+}
+
+main .card-Brasil .title-link,
+main .card-Negócios .title-link,
+main .card-Política .title-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.news-1,
+.news-2,
+.news-3 {
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    min-height: 115px;
+}
+
+
+main .news-3 {
+    border-bottom: none;
+}
+
+main .card-Brasil .news-1,.news-2,.news-3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border-bottom: 1px solid white;
+}
+main .card-Brasil .jornal {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+main .card-Brasil .news-1 .content .jornal img {
+    max-width: 14px;
+    max-height: 14px;
+    display: block;
+}
+main .card-Brasil .news-2 .content .jornal img {
+    max-width: 14px;
+    max-height: 14px;
+    display: block;
+}
+main .card-Brasil .news-3 .content .jornal img {
+    max-width: 14px;
+    max-height: 14px;
+    display: block;
+}
+
+main .card-Brasil .news-1 img {
+    width: 24%;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    object-fit: cover;
+}
+main .card-Brasil .news-1 img:last-child {
+    max-height: 80px;
+}
+main .card-Brasil .news-2 img {
+    width: 24%;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    object-fit: cover;
+}
+main .card-Brasil .news-2 img:last-child {
+    max-height: 80px;
+}
+main .card-Brasil .news-3 img {
+    width: 24%;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    object-fit: cover;
+}
+main .card-Brasil .news-3 img:last-child {
+    max-height: 80px;
+}
+
+main .card-Negócios .news-1,
+main .card-Negócios .news-2,
+main .card-Negócios .news-3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border-bottom: 1px solid white;
+}
+main .card-Negócios .news-3 {
+    border-bottom: none;
+}
+main .card-Negócios .jornal {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+main .card-Negócios .rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 6px;    
+}
+main .card-Negócios .rodape-2 {
+    display: block;
+    line-height: 1.2;
+    text-decoration: none;
+    font-size: 10px;
+    color: #a8c7fa;
+}
+main .card-Negócios .rodape-2 br{
+    line-height: 0;
+}
+
+main .card-Negócios .news-1 .content .jornal img {
+    max-width: 14px;
+    max-height: 14px;
+    display: block;
+}
+main .card-Negócios .news-2 .content .jornal img {
+    max-width: 14px;
+    max-height: 14px;
+    display: block;
+}
+main .card-Negócios .news-3 .content .jornal img {
+    max-width: 14px;
+    max-height: 14px;
+    display: block;
+}
+
+main .card-Negócios .news-3 .content .jornal {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+main .card-Negócios .news-3 .content .jornal .Ibovespa {
+    min-height: 80px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0 10px 5px 7px;
+}
+main .card-Negócios .news-3 .content .jornal .lGOVERNA {
+    min-height: 80px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0 10px 5px 7px;
+}
+main .card-Negócios .news-3 .content .jornal .Bovespa {
+    min-height: 80px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0 10px 5px 7px;
+}
+.jornal img{
+    margin-top: 5px;
+}
+.jornal span,
+.jornal small {
+    display: block;
+    margin: 4px 0;
+}
+
+
+
+main .card-Negócios .news-1 img {
+    width: 24%;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    object-fit: cover;
+}
+main .card-Negócios .news-1 img:last-child {
+    max-height: 80px;
+}
+main .card-Negócios .news-2 img {
+    width: 24%;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    object-fit: cover;
+}
+main .card-Negócios .news-2 img:last-child {
+    max-height: 80px;
+}
+
+main .card-Política .news-1,.news-2,.news-3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border-bottom: 1px solid white;
+}
+main .card-Política .jornal {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+main .card-Política .news-1 .content .jornal img {
+    max-width: 14px;
+    max-height: 14px;
+    display: block;
+}
+main .card-Política .news-2 .content .jornal img {
+    max-width: 14px;
+    max-height: 14px;
+    display: block;
+}
+main .card-Política .news-3 .content .jornal img {
+    max-width: 14px;
+    max-height: 14px;
+    display: block;
+}
+
+main .card-Política .news-1 img {
+    width: 24%;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    object-fit: cover;
+}
+main .card-Política .news-1 img:last-child {
+    max-height: 80px;
+}
+main .card-Política .news-2 img {
+    width: 24%;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    object-fit: cover;
+}
+main .card-Política .news-2 img:last-child {
+    max-height: 80px;
+}
+main .card-Política .news-3 img {
+    width: 24%;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    object-fit: cover;
+}
+main .card-Política .news-3 img:last-child {
+    max-height: 80px;
+}
+
+main .card-Brasil h4,
+main .card-Negócios h4,
+main .card-Política h4 {
+    font-size: 9px;
+    padding: 6px 0;
+}
+
+main .card-Brasil p,
+main .card-Negócios p,
+main .card-Política p {
+    min-height: 45px;
+    font-size: 11px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+}
+
+main .card-Brasil span,
+main .card-Negócios span,
+main .card-Política span {
+    font-size: 7px;
+}
+
+
