@@ -7,12 +7,30 @@ section{
     gap: 10px;
 }
 
-.pai .etretenimento{
+.pai{
     background-color: rgb(24, 24, 24);
     border-radius: 10px;
     width: 360px;
     height: 390px;
     padding: 10px;
+}
+
+.pai .etretenimento{
+    width: 100%;
+}
+
+.pai .news1{
+    width: 50%;
+}
+
+.sub-pai{
+    display: flex;
+    justify-content: space-between;
+}
+.sub-pai img{
+    height: 77px;
+    width: 110px;
+    border-radius: 8px;
 }
 
 p{
