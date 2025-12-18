@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+    font-style: normal;
+}
+
+.wrapper {
+    background-color: #292a2d;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper header {
+    padding: 10px 20px;
+    background-color: #202124;
+}
+
+.wrapper header .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper header .actions  .logo {
+    margin: 8px 0 0 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.wrapper header .actions .search {
+    display: flex;
+    width: 800px;
+}
+
+.wrapper header .actions .search .serach-form {
+    width: 80%;
+    background-color: #3a3c41;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content .search-form-input {
+    height: 30px;
+    width: 360px;
+    border: none;
+    background-color: transparent;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content .search-form-input::placeholder {
+    color: #e9e6e6;
+    font-size: 16px;
+}
+
+
+.wrapper header .actions .search .serach-form button {
+    background-color: transparent;
+}
+
+.wrapper header .actions .search .serach-form button:hover {
+    background-color: #585b64;
+    border-radius: 50%;
+}
+
+.wrapper header .actions .search button {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .search button:hover {
+    background-color: #3a3c41;
+    border-radius: 50%;
+}
+
+.wrapper header .actions  .account .google-apps {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .account .google-apps:hover {
+    width: 50px;
+    height: 50px;
+    background-color: #3a3c41;
+    border-radius: 50%;
+}
+
+.wrapper header .actions .account .google-apps  svg {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.wrapper header .actions .account .my-account {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .account .my-account svg {
+    fill: #fff;
+}
+
+.wrapper header nav {
+    margin: 20px 0 0 0;
+}
+
+.wrapper header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+.wrapper header nav ul li a {
+    text-decoration: none;
+    color: #e9e6e6;
+    font-size: 14px;
+}
+
+main {
+    margin: 20px 0;
+}
+
+main .comeco-main {
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 900px;
+}
+
+main .comeco-main .previsao-tempo .logo-clima {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    fill: #fff;
+    background: #202124;
+    width: 200px;
+    border-radius: 8px;
+}
+
+main .comeco-main .previsao-tempo .logo-clima svg:hover {
+    cursor: pointer;
+}
+
+.wrapper main .cards {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 900px;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.wrapper main .card-principal {
+    background: #202124;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    min-height: 350px;
+}
+
+.wrapper main .card-principal .titulo-card {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.wrapper main .card-principal .titulo-card ul a {
+    color: rgb(33, 178, 245);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.wrapper main .card-principal .titulo-card svg {
+    fill:rgb(33, 178, 245);
+}
+
+.wrapper main .card-principal .titulo-card svg:hover {
+    cursor: pointer;
+}
+
+.wrapper main .card-principal .noticia-principal {
+    display: flex;
+    gap: 20px;
+}
+
+.wrapper main .card-principal .conteudo-esquerda .noticia-titulo {
+    display: flex;
+    margin: 16px 0;
+}
+
+.wrapper main .card-principal .conteudo-esquerda .noticia-titulo ul a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #36f1f1;
+}
+
+.wrapper main .card-principal .conteudo-esquerda .noticia-titulo svg {
+    fill: #36f1f1;
+}
+
+.wrapper main .card-principal .conteudo-esquerda .noticia-imagem span {
+    font-size: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.wrapper main .card-principal .conteudo-esquerda .noticia-imagem img {
+    width: 50%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.wrapper main .card-principal .conteudo-esquerda .noticia-imagem .titulo-noticia-imagem {
+    width: 50%;
+}
+.wrapper main .card-principal .conteudo-esquerda .noticia-imagem .titulo-noticia-imagem ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.wrapper main .card-principal .conteudo-direita .noticia-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.wrapper main .card-principal .conteudo-direita .noticia-1 span{
+    color: #fff;
+    font-size: 8px;
+    padding: 4px 0;
+}
+
+.wrapper main .card-principal .conteudo-direita .noticia-1 ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.wrapper main .card-principal .conteudo-direita .noticia-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.wrapper main .card-principal .conteudo-direita .noticia-2 span{
+    color: #fff;
+    font-size: 8px;
+    padding: 4px 0;
+}
+
+.wrapper main .card-principal .conteudo-direita .noticia-2 ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.wrapper main .card-principal .conteudo-direita .noticia-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.wrapper main .card-principal .conteudo-direita .noticia-3 span{
+    color: #fff;
+    font-size: 8px;
+}
+
+.wrapper main .card-principal .conteudo-direita .noticia-3 ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.wrapper main .card-secundario {
+    background: #202124;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    height: fit-content;
+}
+
+.wrapper main .card-secundario .titulo-card{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.wrapper main .card-secundario .titulo-card ul a {
+    color: #66f8d4;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.wrapper main .card-secundario .titulo-card svg {
+    fill:#66f8d4;
+}
+
+.wrapper main .card-secundario .titulo-card svg:hover {
+    cursor: pointer;
+}
+
+.wrapper main .card-secundario .noticia-1 span{
+    color: #fff;
+    font-size: 8px;
+    padding: 4px 0;
+}
+
+.wrapper main .card-secundario .noticia-1 .text-imagem{
+    display: flex;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.wrapper main .card-secundario .noticia-1 .text-imagem ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.wrapper main .card-secundario .noticia-1 .text-imagem img {
+    width: 30px;
+    border-radius: 8px;
+}
+
+.wrapper main .card-secundario .noticia-2 span{
+    color: #fff;
+    font-size: 8px;
+    padding: 4px 0;
+}
+
+.wrapper main .card-secundario .noticia-2 .text-imagem{
+    display: flex;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.wrapper main .card-secundario .noticia-2 .text-imagem ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.wrapper main .card-secundario .noticia-2 .text-imagem img {
+    width: 30px;
+    border-radius: 8px;
+}
+
+.wrapper main .card-secundario .noticia-3 span{
+    color: #fff;
+    font-size: 8px;
+    padding: 4px 0;
+}
+
+.wrapper main .card-secundario .noticia-3{
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.wrapper main .card-secundario .noticia-3 ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
