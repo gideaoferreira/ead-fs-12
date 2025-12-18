@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+    font-style: normal;
+}
+
+.wrapper {
+    background-color: #292a2d;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper header {
+    padding: 10px 20px;
+    background-color: #202124;
+    border-bottom: 1px solid #585858cb;
+}
+
+.wrapper header .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper header .actions  .logo {
+    margin: 8px 0 0 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.wrapper header .actions .search {
+    display: flex;
+    width: 800px;
+}
+
+.wrapper header .actions .search .serach-form {
+    width: 80%;
+    background-color: #3a3c41;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content .search-form-input {
+    height: 30px;
+    width: 360px;
+    border: none;
+    background-color: transparent;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content .search-form-input::placeholder {
+    color: #e9e6e6;
+    font-size: 16px;
+}
+
+
+.wrapper header .actions .search .serach-form button {
+    background-color: transparent;
+}
+
+.wrapper header .actions .search .serach-form button:hover {
+    background-color: #585b64;
+    border-radius: 50%;
+}
+
+.wrapper header .actions .search button {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .search button:hover {
+    background-color: #3a3c41;
+    border-radius: 50%;
+}
+
+.wrapper header .actions  .account .google-apps {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .account .google-apps:hover {
+    width: 50px;
+    height: 50px;
+    background-color: #3a3c41;
+    border-radius: 50%;
+}
+
+.wrapper header .actions .account .google-apps  svg {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.wrapper header .actions .account .my-account {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .account .my-account svg {
+    fill: #fff;
+}
+
+.wrapper header nav {
+    margin: 20px 0 0 0;
+}
+
+.wrapper header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+.wrapper header nav ul li .divisor {
+    font-size: 20px;
+    color: #585858cb;
+}
+
+.wrapper header nav ul li a {
+    text-decoration: none;
+    color: #e9e6e6;
+    font-size: 14px;
+}
+
+.wrapper header nav ul li a:hover {
+    color: #fff;
+}
+
+.wrapper main .info {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper main .info h2 {
+    font-weight: lighter;
+    color: #fff;
+}
+
+.wrapper main .info small {
+    color: #bdc1c6;
+}
+
+.wrapper main .weather {
+    background-color: #1f1f1f;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.wrapper main .weather button {
+    background-color: transparent;
+    border: none;
+}
+
+.wrapper main .weather button svg {
+    fill: #b6b6b6;
+}
+
+.wrapper main .weather-img {
+    height: 65px;
+    width: 65px;
+}
+
+.wrapper main .weather-img {
+    position: relative;
+}
+
+.wrapper main .weather-img img {
+    width: 100%;
+}
+
+.wrapper main .weather-img:hover .png {
+    display: none;
+}
+
+.wrapper main .weather-img .png {
+    position: absolute;
+}
+
+.wrapper main .weather-img .gif {
+    position: absolute;
+    display: none;
+}
+
+.wrapper main .weather-img:hover .gif {
+    display: block;
+}
+
+.wrapper main .weather .weather-infos {
+    text-align: end;
+}
+
+.wrapper main .weather .weather-infos h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.wrapper main .weather .weather-infos a {
+    text-decoration: none;
+    color: #1967d2;
+}
