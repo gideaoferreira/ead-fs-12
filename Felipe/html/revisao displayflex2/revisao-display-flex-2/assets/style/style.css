@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+    font-style: normal;
+}
+
+.wrapper {
+    background-color: #292a2d;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper header {
+    padding: 10px 20px;
+    background-color: #202124;
+}
+
+.wrapper header .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper header .actions  .logo {
+    margin: 8px 0 0 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.wrapper header .actions .search {
+    display: flex;
+    width: 800px;
+}
+
+.wrapper header .actions .search .serach-form {
+    width: 80%;
+    background-color: #3a3c41;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content .search-form-input {
+    height: 30px;
+    width: 360px;
+    border: none;
+    background-color: transparent;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content .search-form-input::placeholder {
+    color: #e9e6e6;
+    font-size: 16px;
+}
+
+
+.wrapper header .actions .search .serach-form button {
+    background-color: transparent;
+}
+
+.wrapper header .actions .search .serach-form button:hover {
+    background-color: #585b64;
+    border-radius: 50%;
+}
+
+.wrapper header .actions .search button {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .search button:hover {
+    background-color: #3a3c41;
+    border-radius: 50%;
+}
+
+.wrapper header .actions  .account .google-apps {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .account .google-apps:hover {
+    width: 50px;
+    height: 50px;
+    background-color: #3a3c41;
+    border-radius: 50%;
+}
+
+.wrapper header .actions .account .google-apps  svg {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.wrapper header .actions .account .my-account {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .account .my-account svg {
+    fill: #fff;
+}
+
+.wrapper header nav {
+    margin: 20px 0 0 0;
+}
+
+.wrapper header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+.wrapper header nav ul li a {
+    text-decoration: none;
+    color: #e9e6e6;
+    font-size: 14px;
+}
+
+.suas-noticias {
+    margin: 0 0 0 80px;
+
+}
+.primeira .suas-noticias .data {
+    margin: 0 0 0 80px;
+}
+.card-tempo {
+    margin: 10px 80px;
+    width: 250px;
+    background-color: #ced0d4;
+    display: flex;
+    justify-items: center;
+    border-radius: 10px;
+    
+
+}   
+.primeira {
+    display: flex;
+    justify-content: space-between;
+    width: 0 auto;
+    padding: 20px;
+    text-align: center;
+    
+}
