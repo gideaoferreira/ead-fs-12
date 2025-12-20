@@ -6,11 +6,15 @@
     font-style: normal;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     background-color: #292a2d;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .wrapper header {
@@ -168,15 +172,17 @@
 
 .wrapper main .weather {
     background-color: #1f1f1f;
-    padding: 10px;
+    padding: 8px;
     display: flex;
-    gap: 10px;
-    border-radius: 8px;
+    align-items: center;
+    gap: 5px;
+    border-radius: 18px;
 }
 
 .wrapper main .weather button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .wrapper main .weather button svg {
@@ -184,8 +190,8 @@
 }
 
 .wrapper main .weather-img {
-    height: 65px;
-    width: 65px;
+    height: 45px;
+    width: 45px;
 }
 
 .wrapper main .weather-img {
@@ -202,11 +208,13 @@
 
 .wrapper main .weather-img .png {
     position: absolute;
+    transition: ease-in-out 1s;
 }
 
 .wrapper main .weather-img .gif {
     position: absolute;
     display: none;
+    transition: ease-in-out 1s;
 }
 
 .wrapper main .weather-img:hover .gif {
@@ -214,7 +222,13 @@
 }
 
 .wrapper main .weather .weather-infos {
-    text-align: end;
+    text-align: start;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+.wrapper main .weather .weather-infos small {
+    font-size: 12px;
 }
 
 .wrapper main .weather .weather-infos h3 {
@@ -224,6 +238,116 @@
 }
 
 .wrapper main .weather .weather-infos a {
-    text-decoration: none;
     color: #1967d2;
+    font-size: 12px;
+}
+
+section {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.main-news {
+    background-color: #1f1f1f;
+    width: 70%;
+    padding: 16px;
+    border-radius: 18px;
+}
+
+.main-news .main-news-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 13px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.main-news .main-news-title a {
+    display: block;
+    color: #8bb8f8;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+}
+
+.main-news .main-news-content .main-news-content-title {
+    margin-bottom: 16px;
+}
+
+.main-news .main-news-content .main-news-content-title a {
+    font-size: 18px;
+    color: #c2e7ff;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+}
+
+.main-news .main-news-content article {
+    display: flex;
+    gap: 8px;
+}
+
+.main-news .main-news-content article .main-news-content-mainly {
+    width: 80%;
+}
+
+.main-news .main-news-content article .main-img {
+    border-radius: 5px;
+}
+
+.main-news .main-news-content article a {
+    color: #a8a8a8;
+}
+
+.main-news .main-news-content article a .img-logo {
+    height: 12px;
+}
+
+.main-news .main-news-content article a .main-news-content-mainly-source {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-news .main-news-content article a .main-news-content-mainly-source div {
+    
+}
+
+.main-news .main-news-content article a .main-news-content-mainly-source .title-logo {
+    font-size: 12px;
+}
+
+.main-news .main-news-content article a h3 {
+    color: #e0e0e0;
+    font-weight: lighter;
+}
+
+.local-news {
+    background-color: #1f1f1f;
+    width: 30%;
+    padding: 16px;
+    border-radius: 18px;
+}
+
+.local-news .local-news-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.local-news .local-news-title a {
+    display: block;
+    color: #75b8b1;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+}
+
+.local-news .local-news-title svg {
+    fill: #6c7073;
 }
