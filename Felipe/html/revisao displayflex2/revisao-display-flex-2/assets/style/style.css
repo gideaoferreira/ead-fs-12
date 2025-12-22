@@ -140,26 +140,32 @@
 
 .suas-noticias {
     margin: 0 0 0 80px;
+       
 
 }
-.primeira .suas-noticias .data {
+.primeira .suas-noticias.data {
     margin: 0 0 0 80px;
+    
+
 }
 .card-tempo {
     margin: 10px 80px;
-    width: 250px;
+    width: 200px;
     background-color: #ced0d4;
     display: flex;
     justify-items: center;
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 
 }   
 .primeira {
     display: flex;
     justify-content: space-between;
-    width: 0 auto;
-    padding: 20px;
     text-align: center;
+    height: 100px;
+    width: 0 auto;
+    background-color: green;
+    left: 40px;
+    right: 40px;
+    
     
 }
