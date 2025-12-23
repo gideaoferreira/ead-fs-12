@@ -139,11 +139,19 @@
     font-size: 14px;
 }
 
+.corpo-pagina{
+    background-color: rgb(50, 49, 49);
+    
+    
+}
+
 .noticia-title{
     padding: 10px;
     font-size: 16px;
     position: relative;
     left: 360px;
+    color: white;
+    
 
 }
 
