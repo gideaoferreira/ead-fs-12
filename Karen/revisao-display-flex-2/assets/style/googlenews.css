@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+    font-style: normal;
+}
+
+
+.wrapper {  
+    background-color: #292a2d;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper header {
+    padding: 10px 20px;
+    background-color: #202124;
+}
+
+.wrapper header .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper header .actions  .logo {
+    margin: 8px 0 0 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.wrapper header .actions .search {
+    display: flex;
+    width: 800px;
+}
+
+.wrapper header .actions .search .serach-form {
+    width: 80%;
+    background-color: #3a3c41;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content .search-form-input {
+    height: 30px;
+    width: 360px;
+    border: none;
+    background-color: transparent;
+}
+
+.wrapper header .actions .search .serach-form .search-form-content .search-form-input::placeholder {
+    color: #e9e6e6;
+    font-size: 16px;
+}
+
+
+.wrapper header .actions .search .serach-form button {
+    background-color: transparent;
+}
+
+.wrapper header .actions .search .serach-form button:hover {
+    background-color: #585b64;
+    border-radius: 50%;
+}
+
+.wrapper header .actions .search button {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .search button:hover {
+    background-color: #3a3c41;
+    border-radius: 50%;
+}
+
+.wrapper header .actions  .account .google-apps {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .account .google-apps:hover {
+    width: 50px;
+    height: 50px;
+    background-color: #3a3c41;
+    border-radius: 50%;
+}
+
+.wrapper header .actions .account .google-apps  svg {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.wrapper header .actions .account .my-account {
+    background-color: transparent;
+    border: none;
+    fill: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper header .actions .account .my-account svg {
+    fill: #fff;
+}
+
+.wrapper header nav {
+    margin: 20px 0 0 0;
+}
+
+.wrapper header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+.wrapper header nav ul li a {
+    text-decoration: none;
+    color: #e9e6e6;
+    font-size: 14px;
+}
+
+.noticia-title{
+    padding: 10px;
+    font-size: 16px;
+    position: relative;
+    left: 360px;
+
+}
+
+.principal-news{
+    background-color: #1f1f1f;
+    width: 800px;
+    height: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.title-first-news{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.divisor {
+    width: 100%;
+    border-bottom: 1px solid rgb(70, 70, 70);
+    margin: 10px 0;
+}
+
+
+
+.logo-globo{
+    display: flex;
+    font-size: 11px;
+    color: rgb(144, 138, 138);
+}
+
+.sub-title-news-principal{
+    color: white;
+    font-size: 14px;
+    align-items: center;
+}
+
+.time-publish{
+    color: white;
+}
+
+.veja-mais{
+    background-color: rgb(68, 64, 64);
+    width: 780px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    margin: 8px auto;
+    color: white;
+    position: relative;
+    align-items: center;
+    bottom: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-ver-mais{
+    width: 20px;
+}
+
+
+.list-itens{
+    color: white;
+    font-size: 12px;
+    position: relative;
+    left: 300px;
+    bottom: 340px;
+    align-items: center;
+
+}
+
+.titulo-noticias-laterais{
+    font-size: 18px;
+}
+
+.divisor2{
+    width: 780px;
+    border-bottom: 1px solid rgb(70, 70, 70);
+    margin: 10px 0; 
+    position: relative;
+    bottom: 300px;
+}
+
+.second-news{
+    width: 60%;
+    position: relative;
+    top: 100px;
+}
+
+.second-principal-news .second-news{
+    gap: 10px;
+    margin: 10px;
+}
+
+
+.second-principal-news{
+    position: relative;
+    bottom: 300px;
+    width: 800px;
+    height: 1000px;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.logo-tudocelular{
+    color: rgb(144, 138, 138);
+    
+}
+
+.logos-noticias{
+    color: rgb(144, 138, 138);
+}
+
+.botton-ver-mais2{
+    position: relative;
+    right: 15px;
+}
+
