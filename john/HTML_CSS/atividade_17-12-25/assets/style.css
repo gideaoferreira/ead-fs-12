@@ -14,7 +14,7 @@ a {
     background-color: #292a2d;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .wrapper header {
@@ -253,6 +253,7 @@ section {
 .main-news {
     background-color: #1f1f1f;
     width: 70%;
+    height: 100%;
     padding: 16px;
     border-radius: 18px;
 }
@@ -273,6 +274,10 @@ section {
     align-items: center;
 }
 
+.main-news .main-news-content a:hover {
+    text-decoration: underline;
+}
+
 .main-news .main-news-content .main-news-content-title {
     margin-bottom: 16px;
 }
@@ -287,7 +292,7 @@ section {
 
 .main-news .main-news-content article {
     display: flex;
-    gap: 8px;
+    margin-bottom: 10px;
 }
 
 .main-news .main-news-content article .main-news-content-mainly {
@@ -296,6 +301,7 @@ section {
 
 .main-news .main-news-content article .main-img {
     border-radius: 5px;
+    width: 90%;
 }
 
 .main-news .main-news-content article a {
@@ -304,16 +310,14 @@ section {
 
 .main-news .main-news-content article a .img-logo {
     height: 12px;
+
 }
 
 .main-news .main-news-content article a .main-news-content-mainly-source {
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.main-news .main-news-content article a .main-news-content-mainly-source div {
-    
+    justify-content: space-between; 
 }
 
 .main-news .main-news-content article a .main-news-content-mainly-source .title-logo {
@@ -323,6 +327,53 @@ section {
 .main-news .main-news-content article a h3 {
     color: #e0e0e0;
     font-weight: lighter;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.main-news .main-news-content article .main-news-content-asside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-news .main-news-content article .main-news-content-asside a .main-news-content-asside-source {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-news .main-news-content article .main-news-content-asside a .main-news-content-asside-source .title-logo  {
+    font-size: 11px;
+}
+
+.main-news .main-news-content article .main-news-content-asside a h4 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.main-news .main-news-content article .main-news-content-asside a small {
+    font-size: 10px;
+}
+
+.main-news .main-news-content .linkmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C4C7C5;
+    font-size: 14px;
+    fill: #7fcfff;
+}
+
+.main-news .main-news-content .linkmore {
+    background-color: #303030;
+    padding: 0 16px;
+    border-radius: 40px;
+    height: 40px;
+}
+
+.main-news .main-news-content .linkmore svg {
+    margin-right: 10px;
 }
 
 .local-news {
@@ -338,6 +389,7 @@ section {
     justify-content: space-between  ;
     padding-bottom: 16px;
     border-bottom: 1px solid #5e5e5e;
+    margin-bottom: 16px;
 }
 
 .local-news .local-news-title a {
@@ -350,4 +402,65 @@ section {
 
 .local-news .local-news-title svg {
     fill: #6c7073;
+}
+
+.local-news .local-news-content {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+.local-news .local-news-content .last {
+    border: none;
+    margin-bottom: 0;
+}
+
+.local-news .local-news-content img {
+    height: 12px;
+}
+
+.local-news .local-news-content a {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.local-news .local-news-content .local-news-card .local-news-source {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #a8a8a8;
+    font-size: 11px;
+}
+
+.local-news .local-news-content .local-news-card h4 {
+    color: #e0e0e0;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.local-news .local-news-content .local-news-card h4:hover {
+    text-decoration: underline;
+}
+
+.local-news .local-news-content .small-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+} 
+
+.local-news .local-news-content .local-news-footer {
+    color: #a8a8a8;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.local-news .local-news-content .local-news-footer svg {
+    fill: #7fcfff;
+}
+
+.local-news .local-news-content .last {
+    padding-bottom: 0;
 }
