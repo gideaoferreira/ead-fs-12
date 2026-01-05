@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Display Flex</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="actions">
+                <div class="logo">Google Notícias</div>
+                <div class="search">
+                    <form class="serach-form">
+                        <div class="search-form-content">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 1024 1024"><!-- Icon from Simple line icons by Sabbir Ahmed - https://github.com/thesabbir/simple-line-icons/blob/master/LICENSE.md -->
+                                    <path
+                                        d="M1014.64 969.04L703.71 656.207c57.952-69.408 92.88-158.704 92.88-256.208c0-220.912-179.088-400-400-400s-400 179.088-400 400s179.088 400 400 400c100.368 0 192.048-37.056 262.288-98.144l310.496 312.448c12.496 12.497 32.769 12.497 45.265 0c12.48-12.496 12.48-32.752 0-45.263zM396.59 736.527c-185.856 0-336.528-150.672-336.528-336.528S210.734 63.471 396.59 63.471s336.528 150.672 336.528 336.528S582.446 736.527 396.59 736.527" />
+                                </svg>
+                            </button>
+                            <input class="search-form-input" type="text" name="search" id="search" placeholder="Pesquise assuntos, locais e fontes">
+                        </div>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                <path
+                                    d="M11.475 14.475L7.85 10.85q-.075-.075-.112-.162T7.7 10.5q0-.2.138-.35T8.2 10h7.6q.225 0 .363.15t.137.35q0 .05-.15.35l-3.625 3.625q-.125.125-.25.175T12 14.7t-.275-.05t-.25-.175" />
+                            </svg>
+                        </button>
+                    </form>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                            viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                            <path
+                                d="M11.95 18q.525 0 .888-.363t.362-.887t-.362-.888t-.888-.362t-.887.363t-.363.887t.363.888t.887.362m-.9-3.85h1.85q0-.825.188-1.3t1.062-1.3q.65-.65 1.025-1.238T15.55 8.9q0-1.4-1.025-2.15T12.1 6q-1.425 0-2.312.75T8.55 8.55l1.65.65q.125-.45.563-.975T12.1 7.7q.8 0 1.2.438t.4.962q0 .5-.3.938t-.75.812q-1.1.975-1.35 1.475t-.25 1.825M12 22q-2.075 0-3.9-.787t-3.175-2.138T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                            viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                            <path
+                                d="m9.25 22l-.4-3.2q-.325-.125-.612-.3t-.563-.375L4.7 19.375l-2.75-4.75l2.575-1.95Q4.5 12.5 4.5 12.338v-.675q0-.163.025-.338L1.95 9.375l2.75-4.75l2.975 1.25q.275-.2.575-.375t.6-.3l.4-3.2h5.5l.4 3.2q.325.125.613.3t.562.375l2.975-1.25l2.75 4.75l-2.575 1.95q.025.175.025.338v.674q0 .163-.05.338l2.575 1.95l-2.75 4.75l-2.95-1.25q-.275.2-.575.375t-.6.3l-.4 3.2zM11 20h1.975l.35-2.65q.775-.2 1.438-.587t1.212-.938l2.475 1.025l.975-1.7l-2.15-1.625q.125-.35.175-.737T17.5 12t-.05-.787t-.175-.738l2.15-1.625l-.975-1.7l-2.475 1.05q-.55-.575-1.212-.962t-1.438-.588L13 4h-1.975l-.35 2.65q-.775.2-1.437.588t-1.213.937L5.55 7.15l-.975 1.7l2.15 1.6q-.125.375-.175.75t-.05.8q0 .4.05.775t.175.75l-2.15 1.625l.975 1.7l2.475-1.05q.55.575 1.213.963t1.437.587zm1.05-4.5q1.45 0 2.475-1.025T15.55 12t-1.025-2.475T12.05 8.5q-1.475 0-2.488 1.025T8.55 12t1.013 2.475T12.05 15.5M12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="account">
+                    <button class="google-apps">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24"><!-- Icon from Tabler Icons by Paweł Kuna - https://github.com/tabler/tabler-icons/blob/master/LICENSE -->
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 5a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0M4 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0M4 19a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0" />
+                        </svg>
+                    </button>
+                    <button class="my-account">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                            <path
+                                d="M5.85 17.1q1.275-.975 2.85-1.537T12 15t3.3.563t2.85 1.537q.875-1.025 1.363-2.325T20 12q0-3.325-2.337-5.663T12 4T6.337 6.338T4 12q0 1.475.488 2.775T5.85 17.1M12 13q-1.475 0-2.488-1.012T8.5 9.5t1.013-2.488T12 6t2.488 1.013T15.5 9.5t-1.012 2.488T12 13m0 9q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q1.325 0 2.5-.387t2.15-1.113q-.975-.725-2.15-1.112T12 17t-2.5.388T7.35 18.5q.975.725 2.15 1.113T12 20m0-9q.65 0 1.075-.425T13.5 9.5t-.425-1.075T12 8t-1.075.425T10.5 9.5t.425 1.075T12 11m0 7.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Página inicial</a></li>
+                    <li><a href="">Pra você</a></li>
+                    <li><a href="">Seguindo</a></li>
+                    <li><a href="">Destaques jornalisticos</a></li>
+                    <li>
+                        <div class="divisor"></div>
+                    </li>
+                    <li><a href="">Brasil</a></li>
+                    <li><a href="">Mundo</a></li>
+                    <li><a href="">Local</a></li>
+                    <li><a href="">Negócios</a></li>
+                    <li><a href="">Ciência e Tecnologia</a></li>
+                    <li><a href="">Entretenimento</a></li>
+                    <li><a href="">Esporte</a></li>
+                    <li><a href="">Saúde</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="head">
+                <div class="title">
+                    <h4>Suas notícias</h4>
+                    <small>quarta-feira, 17 de dezembro</small>
+                </div>
+                <div class="tempo">
+                    <div class="weather-card">
+                        <img src="./assets/image/left-arrow.png" alt="">
+                        <img src="./assets/image/weather.png" alt="">
+                        <div class="icon">
+                            <div class="sun"></div>
+                            <div class="cloud"></div>
+                        </div>
+                        <div class="info">
+                            <div class="location">Ceará</div>
+                            <div class="temp">29°C</div>
+                            <a href="#">Google Clima</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="main-news">
+                    <div class="title"><a href="#">Principais notícias ></a></div>
+                    <div class="news-1">
+                        <h4><a href="#">EUA e o petroleiro na Venezuela ></a></h4>
+                    </div>
+                    <div class="content">
+                        <div class="news-primary">
+                            <img class="img-1" src="./assets/image/img-1.png" alt="">
+                            <div class="jornal">
+                                <img class="img-bbc" src="./assets/image/logo-bbc.png" alt="">
+                                <span>BBC</span>
+                            </div>
+                            <p>Trump e Venezuela: presidente ordena bloqueio 'total' de todos petroleiros sancionados</p>
+                            <span>3 horas atrás</span>
+                        </div>
+                        <div class="news-secondary">
+                            <div class="jornal">
+                                <img class="img-bbc" src="./assets/image/logo-bbc.png" alt="">
+                                <span>UOL Notícias</span>
+                            </div>
+                            <p>Venezuela chama de 'irracional' o bloqueio de Trump a petroleiros</p>
+                            <span>3 horas atrás</span>
+                            <div class="jornal">
+                                <img class="img-bbc" src="./assets/image/logo-bbc.png" alt="">
+                                <span>Valor Econômico</span>
+                            </div>
+                            <p>EUA monitoram ao menos 18 petroleiros estacionados na Venezuela, diz site</p>
+                            <span>23 minutos atrás</span>
+                            <div class="jornal">
+                                <img class="img-bbc" src="./assets/image/logo-bbc.png" alt="">
+                                <span>Estadão</span>
+                            </div>
+                            <p>Como o controle sobre as reservas de petróleo da Venezuela se tornaram uma prioridade para Trump</p>
+                            <span>3 horas atrás - De Edward Wong e Julian E. Barnes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="local-news">
+                    <div class="title"><a href="#">Notícias Locais ></a></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
