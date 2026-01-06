@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 100px;
+}
+
+header .weather {
+    position: relative;
+}
+
+header .weather img {
+    position: absolute;
+    width: 100px;
+}
+
+header .weather .gif {
+    display: none;
+}
+
+header .weather:hover .png {
+    display: none;
+}
+
+header .weather:hover .gif {
+    display: block;
+}
+
+.card1 {
+    width: 100%;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.card1 .bx {
+    width: 100px;
+    height: 100px;
+    background-color: bisque
+}
+
+.card2 {
+    width: 100%;
+    background-color: rgb(255, 192, 192);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card2 .bx {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+}
+
+.card3 {
+    width: 100%;
+    background-color: rgb(168, 223, 255);
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.card3 .bx {
+    width: 100px;
+    height: 100px;
+    background-color: bisque
+}

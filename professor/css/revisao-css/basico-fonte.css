@@ -1,0 +1,23 @@
+.negrito {
+    font-weight: bolder;
+}
+
+.italico {
+    font-style: italic;
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+.fonte-maior {
+    font-size: 20px;
+}
+
+.fonte-diferente {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cord-da-fonte {
+    color: chocolate;
+}
