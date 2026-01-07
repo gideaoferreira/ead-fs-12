@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <div class="alert alert-warning m-3">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" style="width: 40px;" class="bi flex-shrink-0 me-2" viewBox="0 0 16 16"
+            role="img" aria-label="Warning:">
+            <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg> Combinações entre classes</h1>
+        <p>
+
+            É possível combinar várias classes do Bootstrap para criar componentes personalizados e responsivos.
+        </p>
+        <hr>
+        <p>
+            Exemplo: <code>&lt;table class="table table-striped table-hover"&gt;</code> cria uma tabela que é ao mesmo
+            tempo "listrada" e com efeito de "hover".
+        </p>
+    </div>
+    <h2>Tabela padrão</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gideão</td>
+                <td>Ferreira</td>
+                <td>gf@gmail.com</td>
+                <td>(85) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Karen</td>
+                <td>Silva</td>
+                <td>ks@gmail.com</td>
+                <td>(21) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Fernandes</td>
+                <td>js@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Pontes</td>
+                <td>bp@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Gideão</td>
+                <td>Ferreira</td>
+                <td>gf@gmail.com</td>
+                <td>(85) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Karen</td>
+                <td>Silva</td>
+                <td>ks@gmail.com</td>
+                <td>(21) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Fernandes</td>
+                <td>js@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Pontes</td>
+                <td>bp@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Tabela no dark mode</h2>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gideão</td>
+                <td>Ferreira</td>
+                <td>gf@gmail.com</td>
+                <td>(85) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Karen</td>
+                <td>Silva</td>
+                <td>ks@gmail.com</td>
+                <td>(21) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Fernandes</td>
+                <td>js@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Pontes</td>
+                <td>bp@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Gideão</td>
+                <td>Ferreira</td>
+                <td>gf@gmail.com</td>
+                <td>(85) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Karen</td>
+                <td>Silva</td>
+                <td>ks@gmail.com</td>
+                <td>(21) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Fernandes</td>
+                <td>js@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Pontes</td>
+                <td>bp@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Tabela modo striped "listrada" </h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gideão</td>
+                <td>Ferreira</td>
+                <td>gf@gmail.com</td>
+                <td>(85) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Karen</td>
+                <td>Silva</td>
+                <td>ks@gmail.com</td>
+                <td>(21) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Fernandes</td>
+                <td>js@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Pontes</td>
+                <td>bp@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Gideão</td>
+                <td>Ferreira</td>
+                <td>gf@gmail.com</td>
+                <td>(85) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Karen</td>
+                <td>Silva</td>
+                <td>ks@gmail.com</td>
+                <td>(21) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Fernandes</td>
+                <td>js@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Pontes</td>
+                <td>bp@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <h2>Tabela com hover </h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gideão</td>
+                <td>Ferreira</td>
+                <td>gf@gmail.com</td>
+                <td>(85) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Karen</td>
+                <td>Silva</td>
+                <td>ks@gmail.com</td>
+                <td>(21) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Fernandes</td>
+                <td>js@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Pontes</td>
+                <td>bp@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Gideão</td>
+                <td>Ferreira</td>
+                <td>gf@gmail.com</td>
+                <td>(85) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Karen</td>
+                <td>Silva</td>
+                <td>ks@gmail.com</td>
+                <td>(21) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Fernandes</td>
+                <td>js@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Pontes</td>
+                <td>bp@gmail.com</td>
+                <td>(83) 9 8899-8899</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
