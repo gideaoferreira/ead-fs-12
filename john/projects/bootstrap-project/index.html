@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>BS Homepage</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar container d-flex justify-content-between" style="padding: 27px 0;">
+            <div class="logo">
+                <a href="#"><img src="./assets/images/logo/logo.png" alt="Logo da empresa"></a>
+            </div>
+            <div class="searchbar d-flex gap-2 p-3 border-1 rounded-pill" style="background-color: #F8F8F8; width: 400px;">
+                <span class="ps-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9.58335 17.5C13.9556 17.5 17.5 13.9556 17.5 9.58333C17.5 5.21108 13.9556 1.66667 9.58335 1.66667C5.2111 1.66667 1.66669 5.21108 1.66669 9.58333C1.66669 13.9556 5.2111 17.5 9.58335 17.5Z" stroke="#4B5563" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.3334 18.3333L16.6667 16.6667" stroke="#4B5563" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <input class="border-0 shadow-none focus-ring" type="text" name="searchbar" id="searchbar" placeholder="Search in products..." style="background-color: #F8F8F8;">
+            </div>
+            <div class="header-buttons d-flex gap-3">
+                <a href="#" class="btn p-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.5899 22C20.5899 18.13 16.7399 15 11.9999 15C7.25991 15 3.40991 18.13 3.40991 22" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="cart position-relative">
+                    <button type="button" class="btn p-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2 2H3.74001C4.82001 2 5.67 2.93 5.58 4L4.75 13.96C4.61 15.59 5.89999 16.99 7.53999 16.99H18.19C19.63 16.99 20.89 15.81 21 14.38L21.54 6.88C21.66 5.22 20.4 3.87 18.73 3.87H5.82001" stroke="#4B5563" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.25 22C16.9404 22 17.5 21.4404 17.5 20.75C17.5 20.0596 16.9404 19.5 16.25 19.5C15.5596 19.5 15 20.0596 15 20.75C15 21.4404 15.5596 22 16.25 22Z" stroke="#4B5563" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.25 22C8.94036 22 9.5 21.4404 9.5 20.75C9.5 20.0596 8.94036 19.5 8.25 19.5C7.55964 19.5 7 20.0596 7 20.75C7 21.4404 7.55964 22 8.25 22Z" stroke="#4B5563" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 8H21" stroke="#4B5563" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="cart-items position-absolute top-0 start-100 translate-middle badge rounded-pill fw-normal" style="background-color: #0EA5E9;">
+                        3
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr class="m-0">
+    <footer>
+        <div class="main-footer">
+            <div class="footer-content container px-0 py-5 d-flex justify-content-between">
+                <div class="info">
+                    <div class="logo mb-3">
+                        <img src="./assets/images/logo/logo.png" alt="Logo da empresa">
+                    </div>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a class="link d-flex align-items-center gap-2" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_2_2226)">
+                                <path d="M11.5 19.8677V12.9412H13.8088L14.25 10.0588H11.5V8.20589C11.5 7.41177 11.8824 6.64707 13.1176 6.64707H14.3676V4.20589C13.6127 4.07843 12.8726 4.01471 12.1471 4.01471C9.88235 4.01471 8.39706 5.39707 8.39706 7.88236V10.0588H5.88235V12.9412H8.39706V19.8677C3.66176 19.1324 0.0294113 15.0147 0.0294113 10.0588C0.0294113 4.58824 4.47059 0.132355 9.95588 0.132355C15.4265 0.132355 19.8824 4.58824 19.8824 10.0588C19.8824 15.0147 16.25 19.1324 11.5 19.8677Z" fill="#4676ED"/>
+                                <path d="M11.5 12.9412V19.8677C11 19.946 10.4853 19.9853 9.95588 19.9853C9.42647 19.9853 8.90687 19.946 8.39706 19.8677V12.9412H5.88235V10.0588H8.39706V7.88236C8.39706 5.39706 9.88235 4.01471 12.1471 4.01471C12.8725 4.01471 13.6128 4.07843 14.3676 4.20589V6.64706H13.1176C11.8824 6.64706 11.5 7.41177 11.5 8.20589V10.0588H14.25L13.8088 12.9412H11.5Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2_2226">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <small>Facebook</small>
+                        </a></li>
+                        <li><a class="link d-flex align-items-center gap-2" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_2_2231)">
+                                <path d="M19.9135 9.92C19.9135 15.387 15.4752 19.84 9.99348 19.84C4.51176 19.84 0.0734787 15.387 0.0734787 9.92C0.0734787 4.43828 4.51176 0 9.99348 0C15.4752 0 19.9135 4.43828 19.9135 9.92Z" fill="#DA0000"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6068 9.92001C16.6068 11.3504 16.5138 12.4086 16.3276 13.0944C16.1806 13.6676 15.725 14.1085 15.1666 14.2701C14.471 14.4563 12.7466 14.5493 9.99348 14.5493C7.24038 14.5493 5.51601 14.4563 4.82039 14.2701C4.26193 14.1085 3.80634 13.6676 3.65938 13.0944C3.47324 12.4086 3.38015 11.3504 3.38015 9.92001C3.38015 8.47978 3.47324 7.41675 3.65938 6.73092C3.80634 6.15776 4.26193 5.71687 4.82039 5.55521C5.51601 5.37886 7.24038 5.29068 9.99348 5.29068C12.7466 5.29068 14.471 5.37886 15.1666 5.55521C15.725 5.71687 16.1806 6.15776 16.3276 6.73092C16.5138 7.41675 16.6068 8.47978 16.6068 9.92001ZM12.1097 9.92001L8.67082 7.93601V11.904L12.1097 9.92001Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2_2231">
+                                <rect width="19.987" height="19.84" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <small>Youtube</small>
+                        </a></li>
+                        <li><a class="link d-flex align-items-center gap-2" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_2_2236)">
+                                <path d="M9.97059 19.8824C4.5 19.8824 0.0441132 15.4265 0.0441132 9.95589C0.0441132 4.47059 4.5 0.0294189 9.97059 0.0294189C15.4559 0.0294189 19.8971 4.47059 19.8971 9.95589C19.8971 15.4265 15.4559 19.8824 9.97059 19.8824Z" fill="url(#paint0_linear_2_2236)"/>
+                                <path d="M6.80883 9.83824L13.3677 6.76471L10.75 11.7941C9.19118 13.4216 8.35784 14.2353 8.25 14.2353C8.14217 14.2353 8.03922 14.1373 7.94118 13.9412L6.76471 10.6765L6.80883 9.83824Z" fill="#C8DAEA"/>
+                                <path d="M10.1912 12.6029C9.72059 12.9853 9.24019 13.4216 8.75 13.9118C8.25981 14.402 8.04412 14.402 8.10294 13.9118L8.32353 11.5147L10.1912 12.6029Z" fill="#A9C6D8"/>
+                                <path d="M6.79412 10.7941L4.36765 10C4.17157 9.92157 4.10784 9.79413 4.17647 9.61766C4.19118 9.55883 4.23529 9.5147 4.33823 9.44117C4.70098 9.18627 8.01471 7.93138 14.2794 5.67648C14.4559 5.61765 14.598 5.60785 14.7059 5.64707C14.7794 5.67648 14.8235 5.70589 14.8529 5.82354C14.8676 5.86765 14.8824 5.95589 14.8824 6.04413C14.8824 6.10295 14.8676 6.16177 14.8676 6.25001C14.8284 6.86765 14.2353 9.4706 13.0882 14.0588C13.0294 14.3333 12.8774 14.4755 12.6324 14.4853C12.4853 14.4853 12.3235 14.4559 12.1324 14.2941C11.4118 13.6765 8.92647 12 8.36765 11.6324C8.33823 11.6029 8.33823 11.5882 8.32353 11.5588C8.32353 11.5294 8.33823 11.5 8.36765 11.4706C11.2598 8.90196 12.7402 7.48039 12.8088 7.20589C12.8235 7.17648 12.7941 7.16177 12.75 7.17648C12.4559 7.27942 7.47059 10.4412 6.91176 10.7794C6.89216 10.799 6.85294 10.8039 6.79412 10.7941Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <linearGradient id="paint0_linear_2_2236" x1="-0.250004" y1="19.8824" x2="-0.250004" y2="0.0294189" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#1D93D2"/>
+                                <stop offset="1" stop-color="#38B0E3"/>
+                                </linearGradient>
+                                <clipPath id="clip0_2_2236">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <small>Telegram</small>
+                        </a></li>
+                        <li><a class="link d-flex align-items-center gap-2" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_2_2243)">
+                                <path d="M19.9706 10.0588C19.9706 15.5441 15.5294 19.9853 10.0441 19.9853C4.57353 19.9853 0.117645 15.5441 0.117645 10.0588C0.117645 4.58824 4.57353 0.132355 10.0441 0.132355C15.5294 0.132355 19.9706 4.58824 19.9706 10.0588Z" fill="#5A99EC"/>
+                                <path d="M4 14.6029C4.20588 14.6225 4.41666 14.6323 4.63235 14.6323C5.86765 14.6323 7 14.2206 7.91176 13.5C6.75 13.4853 5.77941 12.7206 5.44118 11.6765C5.59804 11.7059 5.76471 11.7206 5.94118 11.7206C6.17647 11.7206 6.40685 11.6912 6.63235 11.6323C5.42647 11.3823 4.51471 10.3235 4.51471 9.04411C4.51471 9.0343 4.51471 9.02449 4.51471 9.0147C4.86765 9.20587 5.27941 9.32352 5.70588 9.33823C5 8.86764 4.54412 8.05881 4.54412 7.14705C4.54412 6.66176 4.67647 6.22058 4.89706 5.82352C6.19118 7.41176 8.13235 8.47058 10.3235 8.57352C10.2843 8.38724 10.2647 8.18627 10.2647 7.97058C10.2647 6.5147 11.4412 5.33823 12.8971 5.33823C13.6618 5.33823 14.3382 5.66176 14.8235 6.17646C15.4265 6.05881 15.9853 5.83823 16.5 5.5294C16.2941 6.14705 15.8824 6.66176 15.3382 6.98529C15.8676 6.92646 16.3824 6.79411 16.8529 6.57352C16.5 7.10293 16.0441 7.57352 15.5294 7.94117C15.5393 8.05881 15.5441 8.17155 15.5441 8.2794C15.5441 11.7647 12.8971 15.7794 8.04412 15.7794C6.55882 15.7794 5.16176 15.3529 4 14.6029Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2_2243">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <small>Twitter</small>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="getting-started">
+                    <h6 class="mb-3 fw-bold">Getting Started</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a class="link" href="#"><small>Release Notes</small></a></li>
+                        <li><a class="link" href="#"><small>Upgrade Guide</small></a></li>
+                        <li><a class="link" href="#"><small>Browser Support</small></a></li>
+                        <li><a class="link" href="#"><small>Dark Mode</small></a></li>
+                    </ul>
+                </div>
+                <div class="explore">
+                    <h6 class="mb-3 fw-bold">Explore</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a class="link" href="#"><small>Prototyping</small></a></li>
+                        <li><a class="link" href="#"><small>Design systems</small></a></li>
+                        <li><a class="link" href="#"><small>Pricing</small></a></li>
+                        <li><a class="link" href="#"><small>Security</small></a></li>
+                    </ul>
+                </div>
+                <div class="community">
+                    <h6 class="mb-3 fw-bold">Community</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a class="link" href="#"><small>Discussion Forums</small></a></li>
+                        <li><a class="link" href="#"><small>Code of Conduct</small></a></li>
+                        <li><a class="link" href="#"><small>Contributing</small></a></li>
+                        <li><a class="link" href="#"><small>API Reference</small></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0">
+        <div class="footer-bottom container px-0 py-5 d-flex justify-content-between">
+            <div class="footer-copyright">
+                <small class="fs-6">Nexton eCommerce. &copy; 2024</small>
+            </div>
+            <div class="payment-icons">
+                <img src="./assets/images/icons/visa.png" alt="Logo da Visa">
+                <img src="./assets/images/icons/paypal.png" alt="Logo do PayPal">
+                <img src="./assets/images/icons/stripe.png" alt="Logo do Stripe">
+                <img src="./assets/images/icons/verisign.png" alt="Logo do Verisign">
+            </div>
+        </div>
+    </footer>
+    <main>
+        <div class="hero container-fluid d-flex position-relative">
+            <div class="hero-slogan p-0 position-absolute w-50 d-flex flex-column gap-4" style="top: 175px; left: 88.50px;">
+                <span class="fs-5">Starting from: $49.99</span>
+                <h1 class="fw-bold" style="font-size: 64px;">Exclusive collection for everyone</h1>
+                <button type="button" class="btn border rounded-pill text-white d-flex align-items-center justify-content-center gap-2" 
+                    style="background-color: #111827; height: 64px; width: 198px;">
+                    Explore now
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9.58332 17.5C13.9556 17.5 17.5 13.9556 17.5 9.58335C17.5 5.2111 13.9556 1.66669 9.58332 1.66669C5.21106 1.66669 1.66666 5.2111 1.66666 9.58335C1.66666 13.9556 5.21106 17.5 9.58332 17.5Z" stroke="#F8FAFC" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.3333 18.3334L16.6667 16.6667" stroke="#F8FAFC" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="hero-slider carousel-indicators d-flex gap-3">
+                <button type="button" class="active rounded-pill border-0" style="width: 40px; height: 8px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-75" style="height: 8px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-75" style="height: 8px; background-color: #111827;"></button>
+            </div>
+        </div>
+        <div class="brand-info container px-0 py-5">
+            <div class="brand-info-content card rounded-4" style="border-color: #eee;">
+                <div class="card-body d-flex px-4 py-3 justify-content-between">
+                    <div class="brand-info-1 w-25 d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 14H13C14.1 14 15 13.1 15 12V2H6C4.5 2 3.19001 2.82999 2.51001 4.04999" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17C2 18.66 3.34 20 5 20H6C6 18.9 6.9 18 8 18C9.1 18 10 18.9 10 20H14C14 18.9 14.9 18 16 18C17.1 18 18 18.9 18 20H19C20.66 20 22 18.66 22 17V14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H20.29L18.58 6.01001C18.22 5.39001 17.56 5 16.84 5H15V12C15 13.1 14.1 14 13 14H12" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 22C9.10457 22 10 21.1046 10 20C10 18.8954 9.10457 18 8 18C6.89543 18 6 18.8954 6 20C6 21.1046 6.89543 22 8 22Z" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 22C17.1046 22 18 21.1046 18 20C18 18.8954 17.1046 18 16 18C14.8954 18 14 18.8954 14 20C14 21.1046 14.8954 22 16 22Z" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 12V14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H20.29L22 12Z" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 8H8" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 11H6" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 14H4" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="info w-100 border-end">
+                            <h4 class="title">Free shipping</h4>
+                            <small style="color: #6c757d;">On orders over $50.00</small>
+                        </div>
+                    </div>
+                    <div class="brand-info-2 w-25 ms-3 p-2 d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 15C22 18.87 18.87 22 15 22L16.05 20.25" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 9C2 5.13 5.13 2 9 2L7.95 3.75" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.7 4.44995L17.6799 6.74994L21.6199 4.45996" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.6799 10.82V6.73999" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.74 2.21L14.34 3.53996C13.8 3.83996 13.35 4.59995 13.35 5.21995V7.75999C13.35 8.37999 13.79 9.13998 14.34 9.43998L16.74 10.77C17.25 11.06 18.09 11.06 18.61 10.77L21.01 9.43998C21.55 9.13998 22 8.37999 22 7.75999V5.21995C22 4.59995 21.56 3.83996 21.01 3.53996L18.61 2.21C18.1 1.93 17.26 1.93 16.74 2.21Z" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.34998 15.45L6.31998 17.7499L10.27 15.46" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.31995 21.82V17.74" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.39 13.21L2.99001 14.54C2.45001 14.84 2 15.5999 2 16.2199V18.76C2 19.38 2.44001 20.14 2.99001 20.44L5.39 21.77C5.9 22.06 6.73999 22.06 7.25999 21.77L9.66 20.44C10.2 20.14 10.65 19.38 10.65 18.76V16.2199C10.65 15.5999 10.21 14.84 9.66 14.54L7.25999 13.21C6.73999 12.93 5.9 12.93 5.39 13.21Z" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="info w-100 border-end">
+                            <h4 class="title">Very easy to return</h4>
+                            <small style="color: #6c757d;">Just phone number</small>
+                        </div>
+                    </div>
+                    <div class="brand-info-3 w-25 ms-3 p-2 d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.99998 3H8.99998C7.04998 8.84 7.04998 15.16 8.99998 21H7.99998" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 3C16.95 8.84 16.95 15.16 15 21" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 16V15C8.84 16.95 15.16 16.95 21 15V16" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 9.0001C8.84 7.0501 15.16 7.0501 21 9.0001" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="info w-100 border-end">
+                            <h4 class="title">Worldwide delivery</h4>
+                            <small style="color: #6c757d;">Fast delivery worldwide</small>
+                        </div>
+                    </div>
+                    <div class="brand-info-4 w-25 ms-3 p-2 d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9.5 13.75C9.5 14.72 10.25 15.5 11.17 15.5H13.05C13.85 15.5 14.5 14.82 14.5 13.97C14.5 13.06 14.1 12.73 13.51 12.52L10.5 11.47C9.91 11.26 9.51001 10.94 9.51001 10.02C9.51001 9.17999 10.16 8.48999 10.96 8.48999H12.84C13.76 8.48999 14.51 9.26999 14.51 10.24" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 7.5V16.5" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 3V7H21" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 2L17 7" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="info">
+                            <h4 class="title">Refunds policy</h4>
+                            <small style="color: #6c757d;">60 days return for any reason</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="collections container px-0 py-5 position-relative">
+            <h2>Start exploring. <span class="opacity-75">Good things are waiting for you</span></h2>
+            <div class="collections-list my-5 d-flex justify-content-between gap-4">
+                <div class="collection card rounded-4" style="width: 33%; border-color: #eee;">
+                    <div class="info card-body p-4 d-flex justify-content-between align-items-center">
+                        <div class="title-group">
+                            <h3 class="title mb-0 fs-5">For Men's</h3>
+                            <small>Starting at $24</small>
+                        </div>
+                        <div class="shop-link">
+                            <a class="link fs-6" href="#">
+                                <small class="border-3 border-start ps-2">SHOP NOW</small>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection card rounded-4" style="width: 33%; border-color: #eee;">
+                    <div class="info card-body p-4 d-flex justify-content-between align-items-center">
+                        <div class="title-group">
+                            <h3 class="title mb-0 fs-5">For Women's</h3>
+                            <small>Starting at $19</small>
+                        </div>
+                        <div class="shop-link">
+                            <a class="link fs-6" href="#">
+                                <small class="border-3 border-start ps-2">SHOP NOW</small>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection card rounded-4" style="width: 33%; border-color: #eee;">
+                    <div class="info card-body p-4 d-flex justify-content-between align-items-center">
+                        <div class="title-group">
+                            <h3 class="title mb-0 fs-5">Accessories</h3>
+                            <small>Explore accessories</small>
+                        </div>
+                        <div class="shop-link">
+                            <a class="link fs-6" href="#">
+                                <small class="border-3 border-start ps-2">SHOP NOW</small>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators position-absolute d-flex gap-2" style="bottom: 20px;">
+                <button type="button" class="border-0 rounded-circle" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+            </div>
+        </section>
+        <section class="recommendation container px-0 py-5 mt-5 position-relative">
+            <h2 class="m-0 fw-bold">Recommendations.</h2>
+            <div class="recommended-products">
+                <div class="products d-flex justify-content-between my-4 py-2">
+                    <div class="product card border-0" style="width: 309px; height: 448px;">
+                        <div class="product-image position-relative">
+                            <div class="cart btn position-absolute rounded-circle px-2 py-1" style="background-color: #fff; left: 260px; top: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M5.33329 7.33337C5.70149 7.33337 5.99996 7.63185 5.99996 8.00004C5.99996 9.10461 6.89539 10 7.99996 10C9.10453 10 9.99996 9.10461 9.99996 8.00004C9.99996 7.63185 10.2984 7.33337 10.6666 7.33337C11.0348 7.33337 11.3333 7.63185 11.3333 8.00004C11.3333 9.84098 9.8409 11.3334 7.99996 11.3334C6.15902 11.3334 4.66663 9.84098 4.66663 8.00004C4.66663 7.63185 4.9651 7.33337 5.33329 7.33337Z" fill="#4B5563"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4.66663H12.7584C13.8077 4.66663 14.6786 5.47752 14.7534 6.52414L15.1275 11.7625C15.2654 13.692 13.7371 15.3333 11.8027 15.3333H4.19722C2.26275 15.3333 0.734525 13.692 0.872351 11.7625L1.24652 6.52414C1.32128 5.47752 2.19215 4.66663 3.24143 4.66663H4.66661V3.99996C4.66661 2.15902 6.159 0.666626 7.99994 0.666626C9.84088 0.666626 11.3333 2.15902 11.3333 3.99996V4.66663ZM5.99994 4.66663H9.99994V3.99996C9.99994 2.89539 9.10451 1.99996 7.99994 1.99996C6.89537 1.99996 5.99994 2.89539 5.99994 3.99996V4.66663ZM3.24143 5.99996C2.89167 5.99996 2.60138 6.27025 2.57646 6.61912L2.20231 11.8575C2.1196 13.0152 3.03653 14 4.19722 14H11.8027C12.9634 14 13.8803 13.0152 13.7976 11.8575L13.4234 6.61912C13.3985 6.27025 13.1082 5.99996 12.7584 5.99996H3.24143Z" fill="#4B5563"/>
+                                </svg>
+                            </div>
+                            <img src="./assets/images/item/watch.png" class="card-img-top" alt="Produto" style="width: 309px; height: 347px;">
+                            <div class="product-info card-body d-flex justify-content-between">
+                                <div class="info">
+                                    <div class="frame 33 mb-2">
+                                        <h5 class="fw-bold fs-6 mb-1">Black Automatic Watch</h5>
+                                        <small>Accessories</small>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <small>4.9 (98)</small>
+                                    </div>
+                                </div>
+                                <div class="price text-end">
+                                    <h5 class="fw-bold fs-6 m-0">$169.99</h5>
+                                    <small class="opacity-75"><del>$199.99</del></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product card border-0" style="width: 309px; height: 448px;">
+                        <div class="product-image position-relative">
+                            <div class="cart btn position-absolute rounded-circle px-2 py-1" style="background-color: #fff; left: 260px; top: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M5.33329 7.33337C5.70149 7.33337 5.99996 7.63185 5.99996 8.00004C5.99996 9.10461 6.89539 10 7.99996 10C9.10453 10 9.99996 9.10461 9.99996 8.00004C9.99996 7.63185 10.2984 7.33337 10.6666 7.33337C11.0348 7.33337 11.3333 7.63185 11.3333 8.00004C11.3333 9.84098 9.8409 11.3334 7.99996 11.3334C6.15902 11.3334 4.66663 9.84098 4.66663 8.00004C4.66663 7.63185 4.9651 7.33337 5.33329 7.33337Z" fill="#4B5563"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4.66663H12.7584C13.8077 4.66663 14.6786 5.47752 14.7534 6.52414L15.1275 11.7625C15.2654 13.692 13.7371 15.3333 11.8027 15.3333H4.19722C2.26275 15.3333 0.734525 13.692 0.872351 11.7625L1.24652 6.52414C1.32128 5.47752 2.19215 4.66663 3.24143 4.66663H4.66661V3.99996C4.66661 2.15902 6.159 0.666626 7.99994 0.666626C9.84088 0.666626 11.3333 2.15902 11.3333 3.99996V4.66663ZM5.99994 4.66663H9.99994V3.99996C9.99994 2.89539 9.10451 1.99996 7.99994 1.99996C6.89537 1.99996 5.99994 2.89539 5.99994 3.99996V4.66663ZM3.24143 5.99996C2.89167 5.99996 2.60138 6.27025 2.57646 6.61912L2.20231 11.8575C2.1196 13.0152 3.03653 14 4.19722 14H11.8027C12.9634 14 13.8803 13.0152 13.7976 11.8575L13.4234 6.61912C13.3985 6.27025 13.1082 5.99996 12.7584 5.99996H3.24143Z" fill="#4B5563"/>
+                                </svg>
+                            </div>
+                            <img src="./assets/images/item/watch.png" class="card-img-top" alt="Produto" style="width: 309px; height: 347px;">
+                            <div class="product-info card-body d-flex justify-content-between">
+                                <div class="info">
+                                    <div class="frame 33 mb-2">
+                                        <h5 class="fw-bold fs-6 mb-1">Black Automatic Watch</h5>
+                                        <small>Accessories</small>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <small>4.9 (98)</small>
+                                    </div>
+                                </div>
+                                <div class="price text-end">
+                                    <h5 class="fw-bold fs-6 m-0">$169.99</h5>
+                                    <small class="opacity-75"><del>$199.99</del></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product card border-0" style="width: 309px; height: 448px;">
+                        <div class="product-image position-relative">
+                            <div class="cart btn position-absolute rounded-circle px-2 py-1" style="background-color: #fff; left: 260px; top: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M5.33329 7.33337C5.70149 7.33337 5.99996 7.63185 5.99996 8.00004C5.99996 9.10461 6.89539 10 7.99996 10C9.10453 10 9.99996 9.10461 9.99996 8.00004C9.99996 7.63185 10.2984 7.33337 10.6666 7.33337C11.0348 7.33337 11.3333 7.63185 11.3333 8.00004C11.3333 9.84098 9.8409 11.3334 7.99996 11.3334C6.15902 11.3334 4.66663 9.84098 4.66663 8.00004C4.66663 7.63185 4.9651 7.33337 5.33329 7.33337Z" fill="#4B5563"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4.66663H12.7584C13.8077 4.66663 14.6786 5.47752 14.7534 6.52414L15.1275 11.7625C15.2654 13.692 13.7371 15.3333 11.8027 15.3333H4.19722C2.26275 15.3333 0.734525 13.692 0.872351 11.7625L1.24652 6.52414C1.32128 5.47752 2.19215 4.66663 3.24143 4.66663H4.66661V3.99996C4.66661 2.15902 6.159 0.666626 7.99994 0.666626C9.84088 0.666626 11.3333 2.15902 11.3333 3.99996V4.66663ZM5.99994 4.66663H9.99994V3.99996C9.99994 2.89539 9.10451 1.99996 7.99994 1.99996C6.89537 1.99996 5.99994 2.89539 5.99994 3.99996V4.66663ZM3.24143 5.99996C2.89167 5.99996 2.60138 6.27025 2.57646 6.61912L2.20231 11.8575C2.1196 13.0152 3.03653 14 4.19722 14H11.8027C12.9634 14 13.8803 13.0152 13.7976 11.8575L13.4234 6.61912C13.3985 6.27025 13.1082 5.99996 12.7584 5.99996H3.24143Z" fill="#4B5563"/>
+                                </svg>
+                            </div>
+                            <img src="./assets/images/item/watch.png" class="card-img-top" alt="Produto" style="width: 309px; height: 347px;">
+                            <div class="product-info card-body d-flex justify-content-between">
+                                <div class="info">
+                                    <div class="frame 33 mb-2">
+                                        <h5 class="fw-bold fs-6 mb-1">Black Automatic Watch</h5>
+                                        <small>Accessories</small>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <small>4.9 (98)</small>
+                                    </div>
+                                </div>
+                                <div class="price text-end">
+                                    <h5 class="fw-bold fs-6 m-0">$169.99</h5>
+                                    <small class="opacity-75"><del>$199.99</del></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators position-absolute d-flex gap-2" style="bottom: 0px;">
+                <button type="button" class="border-0 rounded-circle" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+            </div>
+        </section>
+        <section class="bestsellers container px-0 py-5 mt-5 position-relative">
+            <h2 class="m-0 fw-bold">Best Sellers. <span class="opacity-75">Best selling of the month</span></h2>
+            <div class="bestsellers-products">
+                <div class="products d-flex justify-content-between my-4 py-2">
+                    <div class="product card border-0" style="width: 309px; height: 448px;">
+                        <div class="product-image position-relative">
+                            <div class="cart btn position-absolute rounded-circle px-2 py-1" style="background-color: #fff; left: 260px; top: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M5.33329 7.33337C5.70149 7.33337 5.99996 7.63185 5.99996 8.00004C5.99996 9.10461 6.89539 10 7.99996 10C9.10453 10 9.99996 9.10461 9.99996 8.00004C9.99996 7.63185 10.2984 7.33337 10.6666 7.33337C11.0348 7.33337 11.3333 7.63185 11.3333 8.00004C11.3333 9.84098 9.8409 11.3334 7.99996 11.3334C6.15902 11.3334 4.66663 9.84098 4.66663 8.00004C4.66663 7.63185 4.9651 7.33337 5.33329 7.33337Z" fill="#4B5563"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4.66663H12.7584C13.8077 4.66663 14.6786 5.47752 14.7534 6.52414L15.1275 11.7625C15.2654 13.692 13.7371 15.3333 11.8027 15.3333H4.19722C2.26275 15.3333 0.734525 13.692 0.872351 11.7625L1.24652 6.52414C1.32128 5.47752 2.19215 4.66663 3.24143 4.66663H4.66661V3.99996C4.66661 2.15902 6.159 0.666626 7.99994 0.666626C9.84088 0.666626 11.3333 2.15902 11.3333 3.99996V4.66663ZM5.99994 4.66663H9.99994V3.99996C9.99994 2.89539 9.10451 1.99996 7.99994 1.99996C6.89537 1.99996 5.99994 2.89539 5.99994 3.99996V4.66663ZM3.24143 5.99996C2.89167 5.99996 2.60138 6.27025 2.57646 6.61912L2.20231 11.8575C2.1196 13.0152 3.03653 14 4.19722 14H11.8027C12.9634 14 13.8803 13.0152 13.7976 11.8575L13.4234 6.61912C13.3985 6.27025 13.1082 5.99996 12.7584 5.99996H3.24143Z" fill="#4B5563"/>
+                                </svg>
+                            </div>
+                            <img src="./assets/images/item/watch.png" class="card-img-top" alt="Produto" style="width: 309px; height: 347px;">
+                            <div class="product-info card-body d-flex justify-content-between">
+                                <div class="info">
+                                    <div class="frame 33 mb-2">
+                                        <h5 class="fw-bold fs-6 mb-1">Black Automatic Watch</h5>
+                                        <small>Accessories</small>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <small>4.9 (98)</small>
+                                    </div>
+                                </div>
+                                <div class="price text-end">
+                                    <h5 class="fw-bold fs-6 m-0">$169.99</h5>
+                                    <small class="opacity-75"><del>$199.99</del></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product card border-0" style="width: 309px; height: 448px;">
+                        <div class="product-image position-relative">
+                            <div class="cart btn position-absolute rounded-circle px-2 py-1" style="background-color: #fff; left: 260px; top: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M5.33329 7.33337C5.70149 7.33337 5.99996 7.63185 5.99996 8.00004C5.99996 9.10461 6.89539 10 7.99996 10C9.10453 10 9.99996 9.10461 9.99996 8.00004C9.99996 7.63185 10.2984 7.33337 10.6666 7.33337C11.0348 7.33337 11.3333 7.63185 11.3333 8.00004C11.3333 9.84098 9.8409 11.3334 7.99996 11.3334C6.15902 11.3334 4.66663 9.84098 4.66663 8.00004C4.66663 7.63185 4.9651 7.33337 5.33329 7.33337Z" fill="#4B5563"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4.66663H12.7584C13.8077 4.66663 14.6786 5.47752 14.7534 6.52414L15.1275 11.7625C15.2654 13.692 13.7371 15.3333 11.8027 15.3333H4.19722C2.26275 15.3333 0.734525 13.692 0.872351 11.7625L1.24652 6.52414C1.32128 5.47752 2.19215 4.66663 3.24143 4.66663H4.66661V3.99996C4.66661 2.15902 6.159 0.666626 7.99994 0.666626C9.84088 0.666626 11.3333 2.15902 11.3333 3.99996V4.66663ZM5.99994 4.66663H9.99994V3.99996C9.99994 2.89539 9.10451 1.99996 7.99994 1.99996C6.89537 1.99996 5.99994 2.89539 5.99994 3.99996V4.66663ZM3.24143 5.99996C2.89167 5.99996 2.60138 6.27025 2.57646 6.61912L2.20231 11.8575C2.1196 13.0152 3.03653 14 4.19722 14H11.8027C12.9634 14 13.8803 13.0152 13.7976 11.8575L13.4234 6.61912C13.3985 6.27025 13.1082 5.99996 12.7584 5.99996H3.24143Z" fill="#4B5563"/>
+                                </svg>
+                            </div>
+                            <img src="./assets/images/item/watch.png" class="card-img-top" alt="Produto" style="width: 309px; height: 347px;">
+                            <div class="product-info card-body d-flex justify-content-between">
+                                <div class="info">
+                                    <div class="frame 33 mb-2">
+                                        <h5 class="fw-bold fs-6 mb-1">Black Automatic Watch</h5>
+                                        <small>Accessories</small>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <small>4.9 (98)</small>
+                                    </div>
+                                </div>
+                                <div class="price text-end">
+                                    <h5 class="fw-bold fs-6 m-0">$169.99</h5>
+                                    <small class="opacity-75"><del>$199.99</del></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product card border-0" style="width: 309px; height: 448px;">
+                        <div class="product-image position-relative">
+                            <div class="cart btn position-absolute rounded-circle px-2 py-1" style="background-color: #fff; left: 260px; top: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M5.33329 7.33337C5.70149 7.33337 5.99996 7.63185 5.99996 8.00004C5.99996 9.10461 6.89539 10 7.99996 10C9.10453 10 9.99996 9.10461 9.99996 8.00004C9.99996 7.63185 10.2984 7.33337 10.6666 7.33337C11.0348 7.33337 11.3333 7.63185 11.3333 8.00004C11.3333 9.84098 9.8409 11.3334 7.99996 11.3334C6.15902 11.3334 4.66663 9.84098 4.66663 8.00004C4.66663 7.63185 4.9651 7.33337 5.33329 7.33337Z" fill="#4B5563"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 4.66663H12.7584C13.8077 4.66663 14.6786 5.47752 14.7534 6.52414L15.1275 11.7625C15.2654 13.692 13.7371 15.3333 11.8027 15.3333H4.19722C2.26275 15.3333 0.734525 13.692 0.872351 11.7625L1.24652 6.52414C1.32128 5.47752 2.19215 4.66663 3.24143 4.66663H4.66661V3.99996C4.66661 2.15902 6.159 0.666626 7.99994 0.666626C9.84088 0.666626 11.3333 2.15902 11.3333 3.99996V4.66663ZM5.99994 4.66663H9.99994V3.99996C9.99994 2.89539 9.10451 1.99996 7.99994 1.99996C6.89537 1.99996 5.99994 2.89539 5.99994 3.99996V4.66663ZM3.24143 5.99996C2.89167 5.99996 2.60138 6.27025 2.57646 6.61912L2.20231 11.8575C2.1196 13.0152 3.03653 14 4.19722 14H11.8027C12.9634 14 13.8803 13.0152 13.7976 11.8575L13.4234 6.61912C13.3985 6.27025 13.1082 5.99996 12.7584 5.99996H3.24143Z" fill="#4B5563"/>
+                                </svg>
+                            </div>
+                            <img src="./assets/images/item/watch.png" class="card-img-top" alt="Produto" style="width: 309px; height: 347px;">
+                            <div class="product-info card-body d-flex justify-content-between">
+                                <div class="info">
+                                    <div class="frame 33 mb-2">
+                                        <h5 class="fw-bold fs-6 mb-1">Black Automatic Watch</h5>
+                                        <small>Accessories</small>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <small>4.9 (98)</small>
+                                    </div>
+                                </div>
+                                <div class="price text-end">
+                                    <h5 class="fw-bold fs-6 m-0">$169.99</h5>
+                                    <small class="opacity-75"><del>$199.99</del></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators position-absolute d-flex gap-2" style="bottom: 0px;">
+                <button type="button" class="border-0 rounded-circle" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+                <button type="button" class="border-0 rounded-circle opacity-50" style="width: 6px; height: 6px; background-color: #111827;"></button>
+            </div>
+        </section>
+        <section class="banner px-0 py-5 mt-5">
+            <div class="banner container">
+                <div class="banner-content rounded-5 p-5 d-flex align-items-center" 
+                style="background-color: #f5f5f5; height: 437px; background-image: 
+                url(assets/images/bg/banner-image.png); background-repeat: no-repeat; background-position: right;">
+                    <div class="frame-4 ps-5 d-flex flex-column gap-3">
+                        <div class="frame-32">
+                            <span class="fs-5">100% Original Products</span>
+                            <h2 class="fw-bold w-75 mb-0 mt-3">The All New Fashion Collection Items</h2>
+                        </div>
+                        <span class="fs-5">Starting from $59.99</span>
+                        <button type="button" 
+                        class="btn border rounded-pill text-white d-flex align-items-center justify-content-center gap-2" 
+                        style="background-color: #111827; width: 144px; height: 52px;">
+                            Shop now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
