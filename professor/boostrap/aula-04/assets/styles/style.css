@@ -1,0 +1,9 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.vertical-divisor {
+    width: 1px;
+    background-color: rgb(214, 214, 214);
+    min-height: 40px;
+}
