@@ -1,6 +1,27 @@
 const btnAddUser = document.getElementById('btn-add-user')
+const tableBody = document.getElementById('table-body')
+let users = []
+let formIsValid = true
+
+if(users = JSON.parse(localStorage.getItem('users'))) {
+    users.forEach(function (user) {
+        const tr = document.createElement('tr')
+
+        tr.innerHTML = `
+        <td> ${user.name} </td>
+        <td> ${user.surname} </td>
+        <td> ${user.birthdate} </td>
+        <td> ${user.email} </td>
+        <td> ${user.phone} </td>
+        <td> ${user.cpf} </td>
+    `
+
+        tableBody.appendChild(tr)
+    })
+}
 
 btnAddUser.addEventListener('click',function() {
+    formIsValid = true  
     const formAddUser = document.getElementById('form-add-user')
     // console.log('Aqui temos apenas o nosso formulário "cru":', formAddUser)
 
@@ -10,22 +31,34 @@ btnAddUser.addEventListener('click',function() {
 
     const data = Object.fromEntries(formData)
 
-    const newDate = new Date(data.birthdate)
+    Object.keys(data).forEach(function (key) {
+        if(document.getElementById(`${key}-message-error`)) {
+            document.getElementById(`${key}-message-error`).classList.add(`d-none`)
+        }
+    
+    Object.keys(data).forEach(function (key) {
+        const value = data[key]
+        if(value === '' || value === null) {
+            formIsValid = false
+            if(document.getElementById(`${key}-message-error`)) {
+                document.getElementById(`${key}-message-error`).classList.remove(`d-none`)
+            }
+        }
+    })
 
-    const tmzDiff = new Date().getTimezoneOffset() / 60
-    const localTmz = 24 + tmzDiff
+    if (!formIsValid) {
+        return
+    }
 
-    const birthdateToDateFormat = new Date(Date.UTC(newDate.getFullYear(), newDate.getMonth(), newDate.getDate(), localTmz))
+    users.push(data)
+    localStorage.setItem('users', JSON.stringify(users))
 
-    const dateBirthdateFormat = new Intl.DateTimeFormat('pt-BR',).format(birthdateToDateFormat)
-
-    const tableBody = document.getElementById('table-body')
     const tr = document.createElement('tr')
 
     tr.innerHTML = `
         <td> ${data.name} </td>
         <td> ${data.surname} </td>
-        <td> ${dateBirthdateFormat} </td>
+        <td> ${data.birthdate} </td>
         <td> ${data.email} </td>
         <td> ${data.phone} </td>
         <td> ${data.cpf} </td>
@@ -33,4 +66,4 @@ btnAddUser.addEventListener('click',function() {
 
     tableBody.appendChild(tr)
     formAddUser.reset()
-})
+})})
