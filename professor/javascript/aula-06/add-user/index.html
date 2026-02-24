@@ -8,57 +8,59 @@
     <title>Cadastro de usuário</title>
 </head>
 <body>
-    
     <main>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-sm-12 col-lg-5">
-                    <form class="card p-2" id="form-add-user">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-6">
-                                <label for="name">Nome</label>
-                                <input class="form-control" type="text" name="name" id="name">
-                                <small class="text-danger d-none" id="name-message-error">Nome é obrigatório</small>
+        <div class="container-full mt-5">
+            <div class="row m-0">
+                <div class="col-sm-12 col-lg-4">
+                    <form class="card" id="form-add-user">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                    <label for="name">Nome</label>
+                                    <input class="form-control" type="text" name="name" id="name">
+                                    <small class="text-danger d-none" id="name-message-error">Nome é obrigatório</small>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <label for="surname">Sobrenome</label>
+                                    <input class="form-control" type="text" name="surname" id="surname">
+                                    <small class="text-danger d-none" id="surname-message-error">Sobrenome é obrigatório</small>
+                                </div>
                             </div>
-                            <div class="col-lg-6 col-sm-12">
-                                <label for="surname">Sobrenome</label>
-                                <input class="form-control" type="text" name="surname" id="surname">
-                                <small class="text-danger d-none" id="surname-message-error">Sobrenome é obrigatório</small>
+                            <div class="row my-3">
+                                <div class="col">
+                                    <label for="cpf">CPF</label>
+                                    <input class="form-control" type="text" name="cpf" id="cpf">
+                                    <small class="text-danger d-none" id="cpf-message-error">CPF é obrigatório</small>
+                                </div>
+                                <div class="col">
+                                    <label for="birthdate">Nascimento</label>
+                                    <input class="form-control" type="date" name="birthdate" id="birthdate">
+                                    <small class="text-danger d-none" id="birthdate-message-error">Nascimento é obrigatório</small>
+                                </div>
+                                <div class="col">
+                                    <label for="phone">Telefone</label>
+                                    <input class="form-control" type="text" name="phone" id="phone">
+                                    <small class="text-danger d-none" id="phone-message-error">Telefone é obrigatório</small>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col">
-                                <label for="cpf">CPF</label>
-                                <input class="form-control" type="text" name="cpf" id="cpf">
-                                <small class="text-danger d-none" id="cpf-message-error">CPF é obrigatório</small>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="email">Email</label>
+                                    <input class="form-control" type="text" name="email" id="email">
+                                    <small class="text-danger d-none" id="email-message-error">Email é obrigatório</small>
+                                </div>
                             </div>
-                            <div class="col">
-                                <label for="birthdate">Nascimento</label>
-                                <input class="form-control" type="date" name="birthdate" id="birthdate">
-                                <small class="text-danger d-none" id="birthdate-message-error">Nascimento é obrigatório</small>
+                            <div class="mt-3">
+                                <button type="button" id="btn-add-user" class="btn btn-primary">Cadastrar</button>
                             </div>
-                            <div class="col">
-                                <label for="phone">Telefone</label>
-                                <input class="form-control" type="text" name="phone" id="phone">
-                                <small class="text-danger d-none" id="phone-message-error">Telefone é obrigatório</small>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <label for="email">Email</label>
-                                <input class="form-control" type="text" name="email" id="email">
-                                <small class="text-danger d-none" id="email-message-error">Email é obrigatório</small>
-                            </div>
-                        </div>
-                        <div class="mt-3">
-                            <button type="button" id="btn-add-user" class="btn btn-primary">Cadastrar</button>
                         </div>
                     </form>
                 </div>
-                <div class="col-sm-12 col-lg-7">
-                    <table class="table">
+                <div class="col-sm-12 col-lg-8">
+                    <table class="table table-sm">
                         <thead>
                             <tr>
+                                <th>Id</th>
                                 <th>Nome</th>
                                 <th>Sobrenome</th>
                                 <th>Nascimento</th>
@@ -75,20 +77,58 @@
             </div>
         </div>
     </main>
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="editUserModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="editUserModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="editUserModalLabel">Editar usuário</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form id="form-edit-user">
+                        <input type="hidden" name="id" id="user-id">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                <label for="name">Nome</label>
+                                <input class="form-control" type="text" name="name" id="user-name">
+                                <small class="text-danger d-none" id="name-edit-message-error">Nome é obrigatório</small>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <label for="surname">Sobrenome</label>
+                                <input class="form-control" type="text" name="surname" id="user-surname">
+                                <small class="text-danger d-none" id="surname-edit-message-error">Sobrenome é obrigatório</small>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col">
+                                <label for="cpf">CPF</label>
+                                <input class="form-control" type="text" name="cpf" id="user-cpf">
+                                <small class="text-danger d-none" id="cpf-edit-message-error">CPF é obrigatório</small>
+                            </div>
+                            <div class="col">
+                                <label for="birthdate">Nascimento</label>
+                                <input class="form-control" type="date" name="birthdate" id="user-birthdate">
+                                <small class="text-danger d-none" id="birthdate-edit-message-error">Nascimento é obrigatório</small>
+                            </div>
+                            <div class="col">
+                                <label for="phone">Telefone</label>
+                                <input class="form-control" type="text" name="phone" id="user-phone">
+                                <small class="text-danger d-none" id="phone-edit-message-error">Telefone é obrigatório</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="email">Email</label>
+                                <input class="form-control" type="text" name="email" id="user-email">
+                                <small class="text-danger d-none" id="email-edit-message-error">Email é obrigatório</small>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                <div class="modal-footer d-flex justify-content-between w-100">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="btn-edit-user">Editar</button>
                 </div>
             </div>
         </div>
