@@ -1,0 +1,4 @@
+- npm install react-route-dom
+- npm install bootstrap
+- npm install @popperjs/core
+- npm install sass
