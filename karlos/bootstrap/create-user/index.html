@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+</head>
+<body>
+  <div class="container py-4">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+      <div>
+        <h1 class="h4 mb-0">Tabela de usuarios</h1>
+        <div class="text-secondary small">CRUD + busca + localStorage</div>
+      </div>
+
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-danger" id="clearAllBtn" type="button">
+          Apagar tudo
+        </button>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="card shadow-sm mb-3">
+      <div class="card-body">
+        <form id="userForm" class="row g-3">
+          <div class="col-12 col-md-4">
+            <label class="form-label" for="name">Nome</label>
+            <input class="form-control" id="name" name="name" placeholder="Ex: Karlos Henrique" required>
+          </div>
+
+          <div class="col-12 col-md-5">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" id="email" name="email" type="email" placeholder="ex: karlos@email.com" required>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <label class="form-label" for="age">Idade</label>
+            <input class="form-control" id="age" name="age" type="number" min="0" max="120" placeholder="Ex: 24" required>
+          </div>
+
+          <div class="col-12 d-flex flex-wrap gap-2 justify-content-end">
+            <button class="btn btn-outline-secondary" type="button" id="resetBtn">Limpar</button>
+            <button class="btn btn-primary" type="submit" id="submitBtn">Adicionar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Toolbar -->
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between mb-3">
+          <div class="input-group" style="max-width: 420px;">
+            <span class="input-group-text">🔎</span>
+            <input class="form-control" id="search" placeholder="Buscar por nome ou email...">
+          </div>
+
+          <div class="text-secondary small">
+            <span id="count">0 usuário(s)</span>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table table-striped table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th style="min-width: 220px;">Nome</th>
+                <th style="min-width: 260px;">Email</th>
+                <th style="min-width: 90px;">Idade</th>
+                <th style="min-width: 220px;" class="text-end">Ações</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+
+        <div id="emptyState" class="text-center text-secondary py-4 d-none">
+          Nenhum usuário encontrado.
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center text-secondary small mt-3">
+      Dica: os dados ficam salvos no seu navegador (localStorage).
+    </div>
+  </div>
+  
+</body>
+</html>

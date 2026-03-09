@@ -1,0 +1,4 @@
+# comando para criar projeto React 
+ - npm create vite@latest
+ - npm install
+ - npm run dev 
