@@ -6,6 +6,7 @@ import ProductOferts from "./oferts/product-oferts"
 import Newsletter from "./newsletter/newsletter"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+
  
 
 function HomePage() {
