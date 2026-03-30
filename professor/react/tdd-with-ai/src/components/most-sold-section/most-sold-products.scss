@@ -1,0 +1,124 @@
+// Most Sold Products Section Styles - Professional and Clean
+.most-sold-products {
+  width: 100%;
+  padding: 50px 0;
+  background: #fafafa;
+}
+
+.most-sold-products__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.most-sold-products__title {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.3px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #F54927;
+    margin: 12px auto 0;
+    border-radius: 2px;
+  }
+}
+
+.most-sold-products__subtitle {
+  margin: 12px 0 0 0;
+  font-size: 15px;
+  color: #666;
+  font-weight: 400;
+}
+
+.most-sold-products__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+// Responsive Breakpoints
+@media (max-width: 1200px) {
+  .most-sold-products__grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .most-sold-products {
+    padding: 40px 0;
+  }
+
+  .most-sold-products__title {
+    font-size: 24px;
+  }
+
+  .most-sold-products__grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .most-sold-products {
+    padding: 32px 0;
+  }
+
+  .most-sold-products__header {
+    margin-bottom: 28px;
+  }
+
+  .most-sold-products__title {
+    font-size: 22px;
+
+    &::after {
+      width: 45px;
+      height: 3px;
+      margin: 10px auto 0;
+    }
+  }
+
+  .most-sold-products__subtitle {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .most-sold-products__grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .most-sold-products {
+    padding: 24px 0;
+  }
+
+  .most-sold-products__header {
+    margin-bottom: 20px;
+  }
+
+  .most-sold-products__title {
+    font-size: 20px;
+
+    &::after {
+      width: 40px;
+      height: 3px;
+      margin: 8px auto 0;
+    }
+  }
+
+  .most-sold-products__subtitle {
+    font-size: 13px;
+  }
+
+  .most-sold-products__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
