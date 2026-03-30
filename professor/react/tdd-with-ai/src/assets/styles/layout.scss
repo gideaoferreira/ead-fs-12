@@ -1,0 +1,22 @@
+// Layout Container Styles
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  
+  > * {
+    width: 100%;
+  }
+  
+  .app-header,
+  .app-footer {
+    flex-shrink: 0;
+  }
+  
+  .app-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}

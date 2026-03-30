@@ -1,0 +1,44 @@
+// Header Styles
+.app-header {
+  width: 100%;
+  background-color: #F54927; // Primary color
+  
+  .navbar {
+    width: 100%;
+    background-color: #F54927 !important;
+    padding: 0;
+    
+    .navbar-brand {
+      color: white !important;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-left: 1.5rem;
+      
+      &:hover {
+        color: #F87C63 !important; // Secondary color
+        text-decoration: underline;
+      }
+    }
+    
+    .navbar-toggler {
+      border-color: white;
+      margin-right: 1.5rem;
+      
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+    }
+    
+    .nav-link {
+      color: white !important;
+      margin-right: 1rem;
+      font-weight: 500;
+      
+      &:hover,
+      &.active {
+        color: #F87C63 !important; // Secondary color
+        text-decoration: underline;
+      }
+    }
+  }
+}

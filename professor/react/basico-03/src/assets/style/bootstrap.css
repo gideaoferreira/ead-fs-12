@@ -1,4 +1,4 @@
-@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+/* Bootstrap is imported via JavaScript in src/main.jsx */
 
 .swiper {
     width: 100%;

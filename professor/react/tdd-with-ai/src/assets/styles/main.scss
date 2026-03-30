@@ -1,0 +1,56 @@
+// Color Guideline
+$primary: #F54927;
+$secondary: #F87C63;
+
+// Custom styles for the application
+// Bootstrap is imported in main.jsx
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+// Global utility classes
+.text-primary {
+  color: $primary !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.btn-primary {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  
+  &:hover {
+    background-color: $secondary !important;
+    border-color: $secondary !important;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary !important;
+  border-color: $secondary !important;
+  
+  &:hover {
+    background-color: $primary !important;
+    border-color: $primary !important;
+  }
+}

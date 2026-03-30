@@ -1,0 +1,36 @@
+// Footer Styles
+.app-footer {
+  width: 100%;
+  background-color: #F54927; // Primary color
+  margin-top: auto;
+  border-top: 2px solid #F87C63; // Secondary color
+  padding: 2rem 1.5rem;
+  
+  p {
+    color: white;
+    margin: 0;
+    font-size: 0.95rem;
+    
+    &.text-muted {
+      color: rgba(255, 255, 255, 0.8) !important;
+    }
+  }
+  
+  .row {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-footer {
+    .row {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    .text-md-end {
+      text-align: center !important;
+    }
+  }
+}

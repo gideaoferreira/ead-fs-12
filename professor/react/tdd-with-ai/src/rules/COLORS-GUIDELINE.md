@@ -1,0 +1,4 @@
+# COLORS GUIDELINE
+
+#F54927 primary
+#F87C63 Secondary
