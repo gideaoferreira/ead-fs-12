@@ -1,0 +1,25 @@
+{
+    "name": "backend-api",
+    "author": "Luiz Piris",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon --env-file=.env index.js"
+    },
+    "dependencies": {
+        "express": "^5.2.1",
+        "mysql2": "^3.22.2",
+        "sequelize": "^6.37.8"
+    },
+    "license": "ISC",
+    "repository": {},
+    "keywords": [
+        "api",
+        "backend",
+        "server",
+        "NodeJs"
+    ],
+    "devDependencies": {
+        "nodemon": "^3.1.14"
+    }
+}
